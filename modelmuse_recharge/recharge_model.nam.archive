@@ -1,0 +1,15 @@
+# Name File for MODFLOW created on 27-10-2026 by ModelMuse Version 5.3.0.0
+BEGIN OPTIONS
+  LIST ..\..\output\output.recharge_model\recharge_model.lst
+  PRINT_INPUT
+  SAVE_FLOWS
+END OPTIONS
+
+BEGIN PACKAGES
+  DIS6         ..\..\model\model.recharge_model\recharge_model.dis  DIS
+  IC6          ..\..\model\model.recharge_model\recharge_model.ic  IC
+  NPF6         ..\..\model\model.recharge_model\recharge_model.npf  NPF
+  OC6          ..\..\model\model.recharge_model\recharge_model.oc  OC
+  CHD6         ..\..\model\model.recharge_model\recharge_model.chd  CHD-1
+  RCH6         ..\..\model\model.recharge_model\recharge_model.rch  RCH-1
+END PACKAGES

@@ -1,0 +1,4 @@
+if not exist "..\..\output\NUL" mkdir "..\..\output"
+if not exist "..\..\output\output.recharge_model\NUL" mkdir "..\..\output\output.recharge_model"
+..\..\bin\mf6.exe
+pause

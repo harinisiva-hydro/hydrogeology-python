@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model_Archive_List>
+  <bin Model_Name="recharge_model" FileType="bin">
+    <FileName Model_Name="recharge_model" FileType="bin">..\..\AppData\Local\flopy\bin\mf6.exe</FileName>
+  </bin>
+  <ancillary Model_Name="recharge_model" FileType="ancillary">
+    <FileName Model_Name="recharge_model" FileType="ancillary">recharge_model.gpt</FileName>
+  </ancillary>
+  <model Model_Name="recharge_model" FileType="Model Input">
+    <FileName Model_Name="recharge_model" FileType="Model Input">mfsim.nam</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.chd</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.dis</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.gsf</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.ic</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.ims</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.nam.archive</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.npf</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.oc</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.rch</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">recharge_model.tdis</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">RunModflow.Bat.archive</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Input">usgs.recharge_model.reference</FileName>
+  </model>
+  <output Model_Name="recharge_model" FileType="Model Output">
+    <FileName Model_Name="recharge_model" FileType="Model Output">mfsim.lst</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Output">recharge_model.bhd</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Output">recharge_model.cbc</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Output">recharge_model.dis.grb</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Output">recharge_model.InnerSolution.CSV</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Output">recharge_model.lst</FileName>
+    <FileName Model_Name="recharge_model" FileType="Model Output">recharge_model.OuterSolution.CSV</FileName>
+  </output>
+</Model_Archive_List>
