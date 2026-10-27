@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model_Archive_List>
+  <bin Model_Name="first_model" FileType="bin">
+    <FileName Model_Name="first_model" FileType="bin">..\..\AppData\Local\flopy\bin\mf6.exe</FileName>
+  </bin>
+  <ancillary Model_Name="first_model" FileType="ancillary">
+    <FileName Model_Name="first_model" FileType="ancillary">first_model.gpt</FileName>
+  </ancillary>
+  <model Model_Name="first_model" FileType="Model Input">
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.chd</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.dis</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.gsf</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.ic</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.ims</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.nam.archive</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.npf</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.oc</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">first_model.tdis</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">mfsim.nam</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">RunModflow.Bat.archive</FileName>
+    <FileName Model_Name="first_model" FileType="Model Input">usgs.first_model.reference</FileName>
+  </model>
+  <output Model_Name="first_model" FileType="Model Output">
+    <FileName Model_Name="first_model" FileType="Model Output">first_model.bhd</FileName>
+    <FileName Model_Name="first_model" FileType="Model Output">first_model.cbc</FileName>
+    <FileName Model_Name="first_model" FileType="Model Output">first_model.dis.grb</FileName>
+    <FileName Model_Name="first_model" FileType="Model Output">first_model.InnerSolution.CSV</FileName>
+    <FileName Model_Name="first_model" FileType="Model Output">first_model.lst</FileName>
+    <FileName Model_Name="first_model" FileType="Model Output">first_model.OuterSolution.CSV</FileName>
+    <FileName Model_Name="first_model" FileType="Model Output">mfsim.lst</FileName>
+  </output>
+</Model_Archive_List>

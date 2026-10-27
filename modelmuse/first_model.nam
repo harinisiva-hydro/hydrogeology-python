@@ -1,0 +1,14 @@
+# Name File for MODFLOW created on 25-10-2026 by ModelMuse Version 5.3.0.0
+BEGIN OPTIONS
+  LIST first_model.lst
+  PRINT_INPUT
+  SAVE_FLOWS
+END OPTIONS
+
+BEGIN PACKAGES
+  DIS6         first_model.dis  DIS
+  IC6          first_model.ic  IC
+  NPF6         first_model.npf  NPF
+  OC6          first_model.oc  OC
+  CHD6         first_model.chd  CHD-1
+END PACKAGES
