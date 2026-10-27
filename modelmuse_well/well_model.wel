@@ -1,0 +1,17 @@
+# WEL: Well package file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+BEGIN OPTIONS
+    AUXILIARY IFACE
+    BOUNDNAMES
+    PRINT_INPUT
+    SAVE_FLOWS
+    AUTO_FLOW_REDUCE  1.000000000000E-006 
+END OPTIONS
+
+BEGIN DIMENSIONS
+  MAXBOUND     1
+END DIMENSIONS
+
+BEGIN PERIOD      1
+     1     5     5 -3.000000000000E+002      0 'Well_1'  # Data Set 6: Layer Row Column Q IFACE boundname Intersected by Well_1 with formula: -300
+END PERIOD 
+

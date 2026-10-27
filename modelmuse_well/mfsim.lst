@@ -1,0 +1,420 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                            VERSION 6.7.0 02/05/2026
+
+   MODFLOW 6 compiled Feb 05 2026 22:36:44 with Intel(R) Fortran Intel(R) 64
+   Compiler Classic for applications running on Intel(R) 64, Version 2021.6.0
+                             Build 20220226_000000
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+As a work of the United States Government, this USGS product is 
+in the public domain within the United States. You can copy, 
+modify, distribute, and perform the work, even for commercial 
+purposes, all without asking permission. Additionally, USGS 
+waives copyright and related rights in the work worldwide 
+through CC0 1.0 Universal Public Domain Dedication 
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The following GNU Lesser General Public License (LGPL) libraries
+are used in this USGS product:
+
+    SPARSKIT version 2.0
+      ilut, luson, and qsplit 
+      (https://www-users.cse.umn.edu/~saad/software/SPARSKIT/)
+
+    RCM - Reverse Cuthill McKee Ordering
+      (https://people.math.sc.edu/Burkardt/f_src/rcm/rcm.html)
+
+    BLAS - Basic Linear Algebra Subprograms Level 1
+      (https://people.math.sc.edu/Burkardt/f_src/blas1_d/blas1_d.html)
+
+    SPARSEKIT - Sparse Matrix Utility Package
+      amux, dperm, dvperm, rperm, and cperm
+      (https://people.sc.fsu.edu/~jburkardt/f77_src/sparsekit/sparsekit.html)
+
+The following BSD-3 License libraries are used in this USGS product:
+
+    Modern Fortran DAG Library
+      Copyright (c) 2018, Jacob Williams
+      All rights reserved.
+      (https://github.com/jacobwilliams/daglib)
+
+MODFLOW 6 compiler options: /Isrc\libmf6_external.a.p /Isrc\libmf6core.a.p
+/Isrc /I..\src /MT /nologo /warn:general /warn:truncated_source /stand:f18
+/O2 /fpe:0 /heap-arrays:0 /traceback /fpp /Qdiag-disable:7416
+/Qdiag-disable:7025 /Qdiag-disable:5268 /Qdiag-disable:10448
+/Fdsrc\libmf6core.a.p\Utilities_compilerversion.F90.pdb
+/module:src\libmf6core.a.p
+/Fosrc/libmf6core.a.p/Utilities_compilerversion.F90.obj /c
+
+System command used to initiate simulation:
+C:\Users\harin\AppData\Local\flopy\bin\mf6.exe
+
+MODFLOW was compiled using uniform precision.
+
+Real Variables
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+  PRECISION: 15
+  SIZE IN BITS: 64
+
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  SIZE IN BITS: 32
+
+Long Integer Variables
+  KIND: 8
+  HUGE (largest value): 9223372036854775807
+  SIZE IN BITS: 64
+
+Logical Variables
+  KIND: 4
+  SIZE IN BITS: 32
+ 
+
+ OPENED mfsim.nam
+ FILE TYPE:NAM6               UNIT 1001   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED well_model.tdis
+ FILE TYPE:TDIS6              UNIT 1002   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for SIM/TDIS
+ # TDIS file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+   String detected: TIME_UNITS = DAYS
+   Integer detected: NPER = 1
+   Double precision 1D constant array detected: PERLEN = 1.000000000000000
+   Integer 1D constant array detected: NSTP = 1
+   Double precision 1D constant array detected: TSMULT = 1.000000000000000
+ Loading input complete...
+
+ OPENED well_model.nam
+ FILE TYPE:GWF6               UNIT 1003   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/NAM
+ # Name File for MODFLOW created on 27-10-2026 by ModelMuse Version 5.3.0.0
+   String detected: LIST = well_model.lst
+   Keyword detected: PRINT_INPUT
+   Keyword detected: SAVE_FLOWS
+ Loading input complete...
+
+ OPENED well_model.dis
+ FILE TYPE:DIS6               UNIT 1004   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/DIS
+ # Discretization File created on 27-10-2026 by ModelMuse version 5.3.0.0.
+ # First model, 10x10 grid
+ # Upper left corner: (0, 0)
+ # Lower left corner: (0, -1000)
+ # Upper right corner: (1000, 0)
+ # Lower right corner: (1000, -1000)
+ # Grid angle (in degrees counterclockwise): 0
+ # Number of active cells = 100.
+   String detected: LENGTH_UNITS = METERS
+   Double detected: XORIGIN = .000000000000000
+   Double detected: YORIGIN = -1000.000000000000
+   Double detected: ANGROT = .000000000000000
+   Integer detected: NLAY = 1
+   Integer detected: NROW = 10
+   Integer detected: NCOL = 10
+   Double precision 1D constant array detected: DELR = 100.0000000000000
+   Double precision 1D constant array detected: DELC = 100.0000000000000
+   Double precision 2D constant array detected: TOP = 10.00000000000000
+   Double precision 3D constant array detected: BOTM = .000000000000000
+   Integer 3D constant array detected: IDOMAIN = 1
+ Loading input complete...
+
+ OPENED well_model.npf
+ FILE TYPE:NPF6               UNIT 1005   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/NPF
+ # NPF: Node Property Flow package file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+   Keyword detected: SAVE_FLOWS
+   Keyword detected: SAVE_SPECIFIC_DISCHARGE
+   Keyword detected: SAVE_SATURATION
+   Integer 1D constant array detected: ICELLTYPE = 0
+   Double precision 1D constant array detected: K = 5.000000000000000
+   Double precision 1D constant array detected: K33 = .5000000000000000
+   Double precision 1D constant array detected: K22 = 5.000000000000000
+   Double precision 1D constant array detected: ANGLE1 = .000000000000000
+   Double precision 1D constant array detected: ANGLE2 = .000000000000000
+   Double precision 1D constant array detected: ANGLE3 = .000000000000000
+ Loading input complete...
+
+ OPENED well_model.ic
+ FILE TYPE:IC6                UNIT 1006   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/IC
+ # First model, 10x10 grid
+ # Initial Conditions Package file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+   Double precision 1D constant array detected: STRT = 20.00000000000000
+ Loading input complete...
+
+ OPENED well_model.oc
+ FILE TYPE:OC6                UNIT 1007   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/OC
+ # Output Control file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+   String detected: BUDGETFILE = well_model.cbc
+   String detected: HEADFILE = well_model.bhd
+ Loading input complete...
+
+ OPENED well_model.wel
+ FILE TYPE:WEL6               UNIT 1009   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/WEL-1
+ # WEL: Well package file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+    AUXILIARY  VARIABLE: IFACE           
+   Keyword detected: BOUNDNAMES
+   Keyword detected: PRINT_INPUT
+   Keyword detected: SAVE_FLOWS
+   Double detected: AUTO_FLOW_REDUCE = .1000000000000000E-05
+   Integer detected: MAXBOUND = 1
+ Loading input complete...
+
+ OPENED well_model.rch
+ FILE TYPE:RCH6               UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/RCH-1
+ # RCH: Recharge package file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+    AUXILIARY  VARIABLE: IFACE           
+   Keyword detected: PRINT_INPUT
+   Keyword detected: SAVE_FLOWS
+   Keyword detected: BOUNDNAMES
+   Keyword detected: FIXED_CELL
+   Integer detected: MAXBOUND = 100
+ Loading input complete...
+
+ OPENED well_model.chd
+ FILE TYPE:CHD6               UNIT 1013   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ Loading input for MODFLOW/CHD-1
+ # CHD: Time-Variant Specified-Head package file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+    AUXILIARY  VARIABLE: IFACE           
+   Keyword detected: BOUNDNAMES
+   Keyword detected: PRINT_INPUT
+   Keyword detected: SAVE_FLOWS
+   Integer detected: MAXBOUND = 20
+ Loading input complete...
+
+ READING SIMULATION OPTIONS
+    MAXIMUM NUMBER OF ERRORS THAT WILL BE STORED IS 1000
+ END OF SIMULATION OPTIONS
+
+ READING SIMULATION TIMING
+
+ TDIS -- TEMPORAL DISCRETIZATION PACKAGE,
+ VERSION 1 : 11/13/2014 - INPUT READ FROM MEMPATH: __INPUT__/SIM/TDIS                                
+ PROCESSING TDIS OPTIONS
+    SIMULATION TIME UNIT IS DAYS
+ END OF TDIS OPTIONS
+ PROCESSING TDIS DIMENSIONS
+    1 STRESS PERIOD(S) IN SIMULATION
+ END OF TDIS DIMENSIONS
+ PROCESSING TDIS PERIODDATA
+
+
+ STRESS PERIOD     LENGTH       TIME STEPS     MULTIPLIER FOR DELT
+ ----------------------------------------------------------------------------
+        1         1.000000          1                    1.000
+ END OF TDIS PERIODDATA
+ END OF SIMULATION TIMING
+
+ READING SIMULATION MODELS
+    GWF6 model 1 will be created
+ END OF SIMULATION MODELS
+
+ READING SIMULATION EXCHANGES
+ END OF SIMULATION EXCHANGES
+
+ READING SOLUTIONGROUP
+
+ Creating solution: SLN_1           
+
+ OPENED well_model.ims
+ FILE TYPE:IMS   UNIT 1015   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ END OF SOLUTIONGROUP
+
+PROCESSING MODEL CONNECTIONS
+
+ IMS -- ITERATIVE MODEL SOLUTION PACKAGE, VERSION 6, 4/28/2017
+         INPUT READ FROM UNIT 1015
+ # IMS: Iterative Model Solution file created on 27-10-2026 by ModelMuse version 5.3.0.0.
+
+ PROCESSING IMS OPTIONS
+ SIMPLE OPTION:
+ DEFAULT SOLVER INPUT VALUES FOR FAST SOLUTIONS
+
+ OPENED well_model.OuterSolution.CSV
+ FILE TYPE:CSV_OUTER_OUTPUT   UNIT 1019   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+    CSV OUTPUT WILL BE SAVED TO FILE: well_model.OuterSolution.CSV
+    OPENED ON UNIT:    1019
+
+ OPENED well_model.InnerSolution.CSV
+ FILE TYPE:CSV_INNER_OUTPUT   UNIT 1020   STATUS:REPLACE             
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READWRITE           
+
+    CSV OUTPUT WILL BE SAVED TO FILE: well_model.InnerSolution.CSV
+    OPENED ON UNIT:    1020
+   ADAPTIVE TIME STEP SETTING FOUND.  FRACTION OF OUTER MAXIMUM USED TO INCREASE OR DECREASE TIME STEP SIZE IS .3333333333333000
+ END OF IMS OPTIONS
+
+ PROCESSING IMS NONLINEAR
+ END OF IMS NONLINEAR DATA
+ ***UNDER-RELAXATION WILL NOT BE USED***
+ 
+
+ PROCESSING LINEAR DATA
+ END OF LINEAR DATA
+ ***IMS LINEAR SOLVER WILL BE USED***
+
+ IMSLINEAR -- UNSTRUCTURED LINEAR SOLUTION PACKAGE, VERSION 8, 04/28/2017
+ A symmetric matrix will be solved
+
+ OUTER ITERATION CONVERGENCE CRITERION    (DVCLOSE) =    0.100000E-02
+ MAXIMUM NUMBER OF OUTER ITERATIONS        (MXITER) = 25
+ SOLVER PRINTOUT INDEX                     (IPRIMS) = 2
+ NONLINEAR ITERATION METHOD            (NONLINMETH) = 0
+ LINEAR SOLUTION METHOD                   (LINMETH) = 1
+
+       SOLUTION BY THE        CONJUGATE-GRADIENT       METHOD
+ ------------------------------------------------------------------
+ MAXIMUM OF 25 CALLS OF SOLUTION ROUTINE
+ MAXIMUM OF 50 INTERNAL ITERATIONS PER CALL TO SOLUTION ROUTINE
+ LINEAR ACCELERATION METHOD            = CG        
+ MATRIX PRECONDITIONING TYPE           = INCOMPLETE LU       
+ MATRIX SCALING APPROACH               = NO SCALING          
+ MATRIX REORDERING APPROACH            = ORIGINAL ORDERING        
+ NUMBER OF ORTHOGONALIZATIONS          = 0
+ HEAD CHANGE CRITERION FOR CLOSURE     =    0.10000E-03
+ RESIDUAL CHANGE CRITERION FOR CLOSURE =    0.10000E+00
+ RESIDUAL CONVERGENCE OPTION           = 0
+ RESIDUAL CONVERGENCE NORM             = INFINITY NORM   
+ RELAXATION FACTOR                     =    0.00000E+00
+
+
+
+ 
+    Solving:  Stress period:     1    Time step:     1
+ 
+1
+ STRESS PERIOD NO. 1, LENGTH =   1.000000    
+ ------------------------------------------
+ NUMBER OF TIME STEPS = 1
+ MULTIPLIER FOR DELT =     1.000
+
+ IDP PERIOD 1 load for component: MODFLOW
+ Loading input for MODFLOW/WEL-1
+   Integer 2D array detected: CELLID ranges from 1 to 5
+   Double precision 1D constant array detected: Q = -300.0000000000000
+   Double precision 2D constant array detected: AUX = .000000000000000
+ Loading input complete...
+ Loading input for MODFLOW/RCH-1
+   Integer 2D array detected: CELLID ranges from 1 to 10
+   Double precision 1D constant array detected: RECHARGE = .1000000000000000E-02
+   Double precision 2D constant array detected: AUX = .000000000000000
+ Loading input complete...
+ Loading input for MODFLOW/CHD-1
+   Integer 2D array detected: CELLID ranges from 1 to 10
+   Double precision 1D array detected: HEAD ranges from 15.00000000000000 to 25.00000000000000
+   Double precision 2D constant array detected: AUX = .000000000000000
+ Loading input complete...
+ IDP component dynamic load complete...
+
+ INITIAL TIME STEP SIZE =   1.000000    
+
+ SLN_1 OUTER ITERATION SUMMARY
+ ----------------------------------------------------------------------------------------------------------
+                                OUTER      INNER                    STEP   MAXIMUM CHANGE MODEL-(CELLID) OR
+ OUTER ITERATION STEP       ITERATION  ITERATION  MAXIMUM CHANGE SUCCESS             MODEL-PACKAGE-(NUMBER)
+ ----------------------------------------------------------------------------------------------------------
+ Model                              1         11       4.4816471                             1_GWF-(1,10,2)
+ Model                              2          1  5.59914221E-06       *                      1_GWF-(1,1,3)
+ ----------------------------------------------------------------------------------------------------------
+
+
+ 2 CALLS TO NUMERICAL SOLUTION IN TIME STEP 1 STRESS PERIOD 1
+ 12 TOTAL ITERATIONS
+
+ SLN_1 INNER ITERATION SUMMARY
+ --------------------------------------------------------------------------------------------------------------------------------------
+      TOTAL      OUTER      INNER                                                            MAXIMUM                                   
+  ITERATION  ITERATION  ITERATION  MAXIMUM CHANGE      MAXIMUM CHANGE MODEL-(CELLID)        RESIDUAL    MAXIMUM RESIDUAL MODEL-(CELLID)
+ --------------------------------------------------------------------------------------------------------------------------------------
+          1          1          1       3.9638121                     1_GWF-(1,10,2)       68.591897                      1_GWF-(1,2,8)
+          2          1          2       1.6204654                      1_GWF-(1,1,3)      -31.244554                      1_GWF-(1,6,4)
+          3          1          3      0.42550014                      1_GWF-(1,6,4)      -7.8668746                      1_GWF-(1,3,7)
+          4          1          4      0.36176161                      1_GWF-(1,3,5)      -8.0559486                      1_GWF-(1,2,7)
+          5          1          5      0.15143517                      1_GWF-(1,2,7)      -1.9142418                      1_GWF-(1,1,9)
+          6          1          6  2.59452449E-02                      1_GWF-(1,1,9)      0.47988884                      1_GWF-(1,2,2)
+          7          1          7  8.85034288E-03                     1_GWF-(1,10,3)      0.21226693                      1_GWF-(1,2,8)
+          8          1          8  4.01290345E-03                     1_GWF-(1,10,6)  6.78368104E-02                      1_GWF-(1,1,7)
+          9          1          9 -1.24738908E-03                      1_GWF-(1,1,7)  2.19650155E-02                      1_GWF-(1,2,6)
+         10          1         10 -2.09722745E-04                      1_GWF-(1,2,6)  2.97497732E-03                      1_GWF-(1,3,5)
+         11          1         11 -3.26947797E-05                      1_GWF-(1,1,8)  6.60203577E-04                      1_GWF-(1,3,7)
+         12          2          1  5.59914221E-06                      1_GWF-(1,1,3)  1.51218774E-04                      1_GWF-(1,4,6)
+ --------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+ MEMORY MANAGER TOTAL STORAGE BY DATA TYPE, IN KILOBYTES
+ -------------------------------
+                    ALLOCATED   
+ DATA TYPE           MEMORY     
+ -------------------------------
+ Character        11.261000     
+ Logical          4.80000000E-02
+ Integer          36.640000     
+ Real             75.576000     
+ -------------------------------
+ Total            123.52500     
+ Virtual          0.0000000     
+ -------------------------------
+
+
+ 
+ Run end date and time (yyyy/mm/dd hh:mm:ss): 2026/10/27 12:56:05
+ Elapsed run time:  0.084 Seconds
+ Normal termination of simulation.
