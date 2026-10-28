@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model_Archive_List>
+  <bin Model_Name="river_model" FileType="bin">
+    <FileName Model_Name="river_model" FileType="bin">..\..\AppData\Local\flopy\bin\mf6.exe</FileName>
+  </bin>
+  <ancillary Model_Name="river_model" FileType="ancillary">
+    <FileName Model_Name="river_model" FileType="ancillary">river_model.gpt</FileName>
+  </ancillary>
+  <model Model_Name="river_model" FileType="Model Input">
+    <FileName Model_Name="river_model" FileType="Model Input">mfsim.nam</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.chd</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.dis</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.gsf</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.ic</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.ims</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.nam.archive</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.npf</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.oc</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.rch</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.riv</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">river_model.tdis</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">RunModflow.Bat.archive</FileName>
+    <FileName Model_Name="river_model" FileType="Model Input">usgs.river_model.reference</FileName>
+  </model>
+  <output Model_Name="river_model" FileType="Model Output">
+    <FileName Model_Name="river_model" FileType="Model Output">mfsim.lst</FileName>
+    <FileName Model_Name="river_model" FileType="Model Output">river_model.bhd</FileName>
+    <FileName Model_Name="river_model" FileType="Model Output">river_model.cbc</FileName>
+    <FileName Model_Name="river_model" FileType="Model Output">river_model.dis.grb</FileName>
+    <FileName Model_Name="river_model" FileType="Model Output">river_model.InnerSolution.CSV</FileName>
+    <FileName Model_Name="river_model" FileType="Model Output">river_model.lst</FileName>
+    <FileName Model_Name="river_model" FileType="Model Output">river_model.OuterSolution.CSV</FileName>
+  </output>
+</Model_Archive_List>

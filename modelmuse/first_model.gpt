@@ -192,7 +192,7 @@ object PhastModel: TPhastModel
   ModflowPackages.De4Package.HCLOSE.Value = 0.00100000000000000
   ModflowPackages.De4Package.IPRD4 = 1
   ModflowPackages.HobPackage.IsSelected = False
-  ModflowPackages.HobPackage.DryHead = -1000000.00000000000000000
+  ModflowPackages.HobPackage.DryHead = -999999.99999999990000000
   ModflowPackages.HfbPackage.IsSelected = False
   ModflowPackages.ModPath.IsSelected = False
   ModflowPackages.ModPath.MaximumSize = 0
@@ -1193,23 +1193,23 @@ object PhastModel: TPhastModel
       Points = <
         item
           X = 105.73476702508950000
-          Y = -997.31182795698880000
+          Y = -997.31182795698870000
         end
         item
           X = -6.27240143369178400
-          Y = -997.31182795698880000
+          Y = -997.31182795698870000
         end
         item
-          X = -6.27240143369192600
+          X = -6.27240143369192700
           Y = 6.27240143369204000
         end
         item
           X = 105.73476702508950000
-          Y = 6.27240143369192600
+          Y = 6.27240143369192700
         end
         item
           X = 105.73476702508950000
-          Y = -997.31182795698880000
+          Y = -997.31182795698870000
         end>
       ScreenObject.Name = 'Left_25'
       ScreenObject.CellSize = 1.00000000000000000
@@ -1223,7 +1223,7 @@ object PhastModel: TPhastModel
       ScreenObject.HigherElevationFormula = 'Model_Top'
       ScreenObject.LineColor = clBlack
       ScreenObject.LowerElevationFormula = 'Upper_Aquifer_Bottom'
-      ScreenObject.Selected = True
+      ScreenObject.Selected = False
       ScreenObject.SetValuesByInterpolation = False
       ScreenObject.SetValuesOfEnclosedCells = True
       ScreenObject.SetValuesOfIntersectedCells = False
@@ -1351,11 +1351,11 @@ object PhastModel: TPhastModel
           Y = 1.79211469534084300
         end
         item
-          X = 997.31182795698890000
+          X = 997.31182795698870000
           Y = 1.79211469534084300
         end
         item
-          X = 997.31182795698890000
+          X = 997.31182795698870000
           Y = -1010.75268817204300000
         end
         item
@@ -1491,23 +1491,1479 @@ object PhastModel: TPhastModel
       SelectedVertices = <>
       MixtureFormulas.Strings = (
         '')
+    end
+    item
+      ClassTypeName = 'TScreenObject'
+      DataSetNames.Strings = (
+        'Head_P1_S1_L1')
+      DataSetFormulas.Strings = (
+        'ObjectImportedValuesR("Head_P1_S1_L1")')
+      Points = <
+        item
+          X = 50.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -950.00000000000000000
+        end>
+      ScreenObject.Name = 'Head_P1_S1_L1_Object1'
+      ScreenObject.CellSize = 1.00000000000000000
+      ScreenObject.CellSizeUsed = False
+      ScreenObject.ColorLine = False
+      ScreenObject.ElevationCount = ecZero
+      ScreenObject.ElevationFormula = '0.'
+      ScreenObject.EvaluatedAt = eaBlocks
+      ScreenObject.FillColor = clBlack
+      ScreenObject.FillScreenObject = False
+      ScreenObject.HigherElevationFormula = '0.'
+      ScreenObject.LineColor = clBlack
+      ScreenObject.LowerElevationFormula = '0.'
+      ScreenObject.Selected = False
+      ScreenObject.SetValuesByInterpolation = False
+      ScreenObject.SetValuesOfEnclosedCells = False
+      ScreenObject.SetValuesOfIntersectedCells = True
+      ScreenObject.ViewDirection = vdTop
+      ScreenObject.Visible = False
+      ScreenObject.InterpValues = <
+        item
+          Values.InterpolationDirection = pidX
+          Values.IntValue1 = 0
+          Values.IntValue2 = 0
+          Values.UsePHAST_Interpolation = False
+        end>
+      ScreenObject.SectionStarts.DataType = rdtInteger
+      ScreenObject.SectionStarts.Count = 99
+      ScreenObject.SectionStarts.Values = (
+        99
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        13
+        14
+        15
+        16
+        17
+        18
+        19
+        20
+        21
+        22
+        23
+        24
+        25
+        26
+        27
+        28
+        29
+        30
+        31
+        32
+        33
+        34
+        35
+        36
+        37
+        38
+        39
+        40
+        41
+        42
+        43
+        44
+        45
+        46
+        47
+        48
+        49
+        50
+        51
+        52
+        53
+        54
+        55
+        56
+        57
+        58
+        59
+        60
+        61
+        62
+        63
+        64
+        65
+        66
+        67
+        68
+        69
+        70
+        71
+        72
+        73
+        74
+        75
+        76
+        77
+        78
+        79
+        80
+        81
+        82
+        83
+        84
+        85
+        86
+        87
+        88
+        89
+        90
+        91
+        92
+        93
+        94
+        95
+        96
+        97
+        98
+        99)
+      ScreenObject.ImportedValues = <
+        item
+          Name = 'Head_P1_S1_L1'
+          Values.DataType = rdtDouble
+          Values.Count = 100
+          Values.Values = (
+            100
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888740539551000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555534362793000
+            19.44444465637207000
+            18.33333206176758000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444656372070000
+            18.33333396911621000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444656372070000
+            18.33333587646484000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444656372070000
+            18.33333396911621000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444465637207000
+            18.33333396911621000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555534362793000
+            19.44444465637207000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666412353516000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888740539551000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000)
+        end>
+      ScreenObject.ModpathParticles.ParticleDistribution = pdGrid
+      ScreenObject.ModpathParticles.GridParticles.LeftFace = False
+      ScreenObject.ModpathParticles.GridParticles.RightFace = False
+      ScreenObject.ModpathParticles.GridParticles.BackFace = False
+      ScreenObject.ModpathParticles.GridParticles.FrontFace = False
+      ScreenObject.ModpathParticles.GridParticles.BottomFace = False
+      ScreenObject.ModpathParticles.GridParticles.TopFace = False
+      ScreenObject.ModpathParticles.Used = False
+      ScreenObject.ModpathParticles.ReleaseTimes = <
+        item
+        end>
+      ScreenObject.Comment = 
+        'Imported from C:\Users\harin\hydro-portfolio\modelmuse\first_mod' +
+        'el.bhd on 27-10-2026 11:15:32'
+      ScreenObject.UsedModels = <>
+      ScreenObject.PositionLocked = False
+      ScreenObject.SutraBoundaries.FluidSource.Values = <>
+      ScreenObject.SutraBoundaries.FluidSource.UseBCTime = False
+      ScreenObject.SutraBoundaries.FluidSource.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.FluidSource.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.MassEnergySource.Values = <>
+      ScreenObject.SutraBoundaries.MassEnergySource.UseBCTime = False
+      ScreenObject.SutraBoundaries.MassEnergySource.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.MassEnergySource.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedPressure.Values = <>
+      ScreenObject.SutraBoundaries.SpecifiedPressure.UseBCTime = False
+      ScreenObject.SutraBoundaries.SpecifiedPressure.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedPressure.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.Values = <>
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.UseBCTime = False
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.Observations.Times = <>
+      ScreenObject.SutraBoundaries.Observations.ObservationFormat = ofOBS
+      ScreenObject.SutraBoundaries.Lake.InitialStage = '0'
+      ScreenObject.SutraBoundaries.Lake.InitialConcentrationOrTemperature = '0'
+      ScreenObject.SutraBoundaries.Lake.FractionRechargeDiverted = '0'
+      ScreenObject.SutraBoundaries.Lake.FractionDischargeDiverted = '0'
+      ScreenObject.SutraBoundaries.Lake.IsUsed = False
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.Values = <>
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.UseBCTime = False
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestBoundaryValueMethod = ppmAdd
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestLowerFlowRateMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherPressureMethod = ppmAdd
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherFlowRateMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestUOutMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.Values = <>
+      ScreenObject.SutraBoundaries.GenTransportBoundary.UseBCTime = False
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherUMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestLowerFlowUMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherFlowUMethod = ppmMultiply
+      ScreenObject.ObjectLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.ObjectLabel.Font.Color = clBlack
+      ScreenObject.ObjectLabel.Font.Height = -12
+      ScreenObject.ObjectLabel.Font.Name = 'Segoe UI'
+      ScreenObject.ObjectLabel.Font.Style = []
+      ScreenObject.ObjectLabel.OffSetX = 0
+      ScreenObject.ObjectLabel.OffSetY = 20
+      ScreenObject.ObjectLabel.Visible = False
+      ScreenObject.ObjectVertexLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.ObjectVertexLabel.Font.Color = clBlack
+      ScreenObject.ObjectVertexLabel.Font.Height = -12
+      ScreenObject.ObjectVertexLabel.Font.Name = 'Segoe UI'
+      ScreenObject.ObjectVertexLabel.Font.Style = []
+      ScreenObject.ObjectVertexLabel.OffSetX = 0
+      ScreenObject.ObjectVertexLabel.OffSetY = 20
+      ScreenObject.ObjectVertexLabel.Visible = False
+      ScreenObject.SectionLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.SectionLabel.Font.Color = clBlack
+      ScreenObject.SectionLabel.Font.Height = -12
+      ScreenObject.SectionLabel.Font.Name = 'Segoe UI'
+      ScreenObject.SectionLabel.Font.Style = []
+      ScreenObject.SectionLabel.OffSetX = 0
+      ScreenObject.SectionLabel.OffSetY = 20
+      ScreenObject.SectionLabel.Visible = False
+      ScreenObject.StoredMinimumFraction.Value = 0.00000000000000000
+      ScreenObject.QuadtreeRefinementLevel = 0
+      ScreenObject.DynamicTimesSeriesCollections = <>
+      SelectedVertices = <>
+      MixtureFormulas.Strings = (
+        '')
+    end
+    item
+      ClassTypeName = 'TScreenObject'
+      DataSetNames.Strings = (
+        'Water_Table_P1_S1')
+      DataSetFormulas.Strings = (
+        'ObjectImportedValuesR("Water_Table_P1_S1")')
+      Points = <
+        item
+          X = 50.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -50.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -150.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -250.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -350.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -450.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -550.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -650.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -750.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -850.00000000000000000
+        end
+        item
+          X = 50.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 150.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 250.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 350.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 450.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 550.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 650.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 750.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 850.00000000000000000
+          Y = -950.00000000000000000
+        end
+        item
+          X = 950.00000000000000000
+          Y = -950.00000000000000000
+        end>
+      ScreenObject.Name = 'Water_Table_P1_S1_Object1'
+      ScreenObject.CellSize = 1.00000000000000000
+      ScreenObject.CellSizeUsed = False
+      ScreenObject.ColorLine = False
+      ScreenObject.ElevationCount = ecZero
+      ScreenObject.ElevationFormula = '0.'
+      ScreenObject.EvaluatedAt = eaBlocks
+      ScreenObject.FillColor = clBlack
+      ScreenObject.FillScreenObject = False
+      ScreenObject.HigherElevationFormula = '0.'
+      ScreenObject.LineColor = clBlack
+      ScreenObject.LowerElevationFormula = '0.'
+      ScreenObject.Selected = False
+      ScreenObject.SetValuesByInterpolation = False
+      ScreenObject.SetValuesOfEnclosedCells = False
+      ScreenObject.SetValuesOfIntersectedCells = True
+      ScreenObject.ViewDirection = vdTop
+      ScreenObject.Visible = False
+      ScreenObject.InterpValues = <
+        item
+          Values.InterpolationDirection = pidX
+          Values.IntValue1 = 0
+          Values.IntValue2 = 0
+          Values.UsePHAST_Interpolation = False
+        end>
+      ScreenObject.SectionStarts.DataType = rdtInteger
+      ScreenObject.SectionStarts.Count = 99
+      ScreenObject.SectionStarts.Values = (
+        99
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
+        10
+        11
+        12
+        13
+        14
+        15
+        16
+        17
+        18
+        19
+        20
+        21
+        22
+        23
+        24
+        25
+        26
+        27
+        28
+        29
+        30
+        31
+        32
+        33
+        34
+        35
+        36
+        37
+        38
+        39
+        40
+        41
+        42
+        43
+        44
+        45
+        46
+        47
+        48
+        49
+        50
+        51
+        52
+        53
+        54
+        55
+        56
+        57
+        58
+        59
+        60
+        61
+        62
+        63
+        64
+        65
+        66
+        67
+        68
+        69
+        70
+        71
+        72
+        73
+        74
+        75
+        76
+        77
+        78
+        79
+        80
+        81
+        82
+        83
+        84
+        85
+        86
+        87
+        88
+        89
+        90
+        91
+        92
+        93
+        94
+        95
+        96
+        97
+        98
+        99)
+      ScreenObject.ImportedValues = <
+        item
+          Name = 'Water_Table_P1_S1'
+          Values.DataType = rdtDouble
+          Values.Count = 100
+          Values.Values = (
+            100
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888740539551000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555534362793000
+            19.44444465637207000
+            18.33333206176758000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444656372070000
+            18.33333396911621000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444656372070000
+            18.33333587646484000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444656372070000
+            18.33333396911621000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777862548828000
+            21.66666793823242000
+            20.55555725097656000
+            19.44444465637207000
+            18.33333396911621000
+            17.22222328186035000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555534362793000
+            19.44444465637207000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888931274414000
+            22.77777671813965000
+            21.66666412353516000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000
+            25.00000000000000000
+            23.88888740539551000
+            22.77777671813965000
+            21.66666603088379000
+            20.55555343627930000
+            19.44444274902344000
+            18.33333206176758000
+            17.22222137451172000
+            16.11111068725586000
+            15.00000000000000000)
+        end>
+      ScreenObject.ModpathParticles.ParticleDistribution = pdGrid
+      ScreenObject.ModpathParticles.GridParticles.LeftFace = False
+      ScreenObject.ModpathParticles.GridParticles.RightFace = False
+      ScreenObject.ModpathParticles.GridParticles.BackFace = False
+      ScreenObject.ModpathParticles.GridParticles.FrontFace = False
+      ScreenObject.ModpathParticles.GridParticles.BottomFace = False
+      ScreenObject.ModpathParticles.GridParticles.TopFace = False
+      ScreenObject.ModpathParticles.Used = False
+      ScreenObject.ModpathParticles.ReleaseTimes = <
+        item
+        end>
+      ScreenObject.Comment = 
+        'Imported from C:\Users\harin\hydro-portfolio\modelmuse\first_mod' +
+        'el.bhd on 27-10-2026 11:15:32'
+      ScreenObject.UsedModels = <>
+      ScreenObject.PositionLocked = False
+      ScreenObject.SutraBoundaries.FluidSource.Values = <>
+      ScreenObject.SutraBoundaries.FluidSource.UseBCTime = False
+      ScreenObject.SutraBoundaries.FluidSource.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.FluidSource.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.MassEnergySource.Values = <>
+      ScreenObject.SutraBoundaries.MassEnergySource.UseBCTime = False
+      ScreenObject.SutraBoundaries.MassEnergySource.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.MassEnergySource.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedPressure.Values = <>
+      ScreenObject.SutraBoundaries.SpecifiedPressure.UseBCTime = False
+      ScreenObject.SutraBoundaries.SpecifiedPressure.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedPressure.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.Values = <>
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.UseBCTime = False
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.Observations.Times = <>
+      ScreenObject.SutraBoundaries.Observations.ObservationFormat = ofOBS
+      ScreenObject.SutraBoundaries.Lake.InitialStage = '0'
+      ScreenObject.SutraBoundaries.Lake.InitialConcentrationOrTemperature = '0'
+      ScreenObject.SutraBoundaries.Lake.FractionRechargeDiverted = '0'
+      ScreenObject.SutraBoundaries.Lake.FractionDischargeDiverted = '0'
+      ScreenObject.SutraBoundaries.Lake.IsUsed = False
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.Values = <>
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.UseBCTime = False
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestBoundaryValueMethod = ppmAdd
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestLowerFlowRateMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherPressureMethod = ppmAdd
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherFlowRateMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestUOutMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.Values = <>
+      ScreenObject.SutraBoundaries.GenTransportBoundary.UseBCTime = False
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherUMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestLowerFlowUMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherFlowUMethod = ppmMultiply
+      ScreenObject.ObjectLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.ObjectLabel.Font.Color = clBlack
+      ScreenObject.ObjectLabel.Font.Height = -12
+      ScreenObject.ObjectLabel.Font.Name = 'Segoe UI'
+      ScreenObject.ObjectLabel.Font.Style = []
+      ScreenObject.ObjectLabel.OffSetX = 0
+      ScreenObject.ObjectLabel.OffSetY = 20
+      ScreenObject.ObjectLabel.Visible = False
+      ScreenObject.ObjectVertexLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.ObjectVertexLabel.Font.Color = clBlack
+      ScreenObject.ObjectVertexLabel.Font.Height = -12
+      ScreenObject.ObjectVertexLabel.Font.Name = 'Segoe UI'
+      ScreenObject.ObjectVertexLabel.Font.Style = []
+      ScreenObject.ObjectVertexLabel.OffSetX = 0
+      ScreenObject.ObjectVertexLabel.OffSetY = 20
+      ScreenObject.ObjectVertexLabel.Visible = False
+      ScreenObject.SectionLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.SectionLabel.Font.Color = clBlack
+      ScreenObject.SectionLabel.Font.Height = -12
+      ScreenObject.SectionLabel.Font.Name = 'Segoe UI'
+      ScreenObject.SectionLabel.Font.Style = []
+      ScreenObject.SectionLabel.OffSetX = 0
+      ScreenObject.SectionLabel.OffSetY = 20
+      ScreenObject.SectionLabel.Visible = False
+      ScreenObject.StoredMinimumFraction.Value = 0.00000000000000000
+      ScreenObject.QuadtreeRefinementLevel = 0
+      ScreenObject.DynamicTimesSeriesCollections = <>
+      SelectedVertices = <>
+      MixtureFormulas.Strings = (
+        '')
     end>
   Version = '5.3.0.0'
   GuiSettings.FrontHeight = 133
   GuiSettings.Height = 600
-  GuiSettings.FrontX = -579.74910394265250000
+  GuiSettings.FrontX = -579.74910394265240000
   GuiSettings.FrontY = -2.61648745519713300
-  GuiSettings.Left = 4
+  GuiSettings.Left = 244
   GuiSettings.MagnificationFront = 0.22320000000000000
   GuiSettings.MagnificationSide = 0.22320000000000000
   GuiSettings.MagnificationTop = 0.22320000000000000
   GuiSettings.SideWidth = 229
   GuiSettings.SideX = -13.92921146953405000
   GuiSettings.SideY = -1042.11469534050100000
-  GuiSettings.Top = 57
+  GuiSettings.Top = 76
   GuiSettings.TopViewHeight = 302
   GuiSettings.TopViewWidth = 537
-  GuiSettings.TopX = -579.74910394265250000
+  GuiSettings.TopX = -579.74910394265240000
   GuiSettings.TopY = -1042.11469534050100000
   GuiSettings.Width = 792
   GuiSettings.WindowState = wsNormal
@@ -1849,13 +3305,6 @@ object PhastModel: TPhastModel
       DataSet.TemplateNeeded = False
       DataSet.UseValuesForObservations = False
       DataSet.StoredObservationDistance.Value = 0.00000000000000000
-      DataSet.CompressedData = {
-        010000000A0000000A000000A900000000000000789CED90410AC23010457FAB
-        56BD8474EF0DDC2AC5BD2788C642A1B690D682A78FBF831157321B0B42026F9A
-        3FBC4C49BCF73E05B025275CD12327AD54873B3B39CEAC1718A64E722556C534
-        D686D5903D8E3888DDD26C60D9757860C3C9DD6BF2407F742D7329136BE9973C
-        E370936CB063A7E0B796731671FDEB4A94A44A664AE64A164A32254B252B256B
-        25E1ADC31B85BB651FFF8BDEF4DE3710BDC9BCB79FFC6EF7047896228B}
     end
     item
       DataSetClass = 'TDataArray'
@@ -2162,6 +3611,234 @@ object PhastModel: TPhastModel
       DataSet.ContourLimits.StoredEpsilon.Value = 0.00000100000000000
       DataSet.Lock = [dcName, dcType, dcOrientation, dcEvaluatedAt]
       DataSet.Orientation = dsoTop
+      DataSet.AngleType = atNone
+      DataSet.ContourInterval.Value = 0.00000000000000000
+      DataSet.PestParametersUsed = False
+      DataSet.PestParametersAllowed = True
+      DataSet.TemplateNeeded = False
+      DataSet.UseValuesForObservations = False
+      DataSet.StoredObservationDistance.Value = 0.00000000000000000
+    end
+    item
+      DataSetClass = 'TDataArray'
+      DataSetFormula = '1E30'
+      DataSet.Name = 'Head_P1_S1_L1'
+      DataSet.Classification = 'Model Results|Layer Data'
+      DataSet.CheckMax = False
+      DataSet.CheckMin = False
+      DataSet.Comment = 
+        'read from: "C:\Users\harin\hydro-portfolio\modelmuse\first_model' +
+        '.bhd" on 27-10-2026 11:15:32'#13#10'Stress Period: 1'#13#10'Time Step: 1'#13#10'El' +
+        'apsed Time: 1'#13#10'File last modified on: 25-10-2026 13:26:30'#13#10#13#10'Lay' +
+        'er: 1'#13#10'Minimum value: 15'#13#10'Maximum value: 25'
+      DataSet.DataType = rdtDouble
+      DataSet.EvaluatedAt = eaBlocks
+      DataSet.Limits.LowerLimit.BooleanLimitValue = False
+      DataSet.Limits.LowerLimit.DataType = rdtDouble
+      DataSet.Limits.LowerLimit.IntegerLimitValue = 0
+      DataSet.Limits.LowerLimit.RealLimitValue = 15.00000000000000000
+      DataSet.Limits.LowerLimit.UseLimit = True
+      DataSet.Limits.UpperLimit.BooleanLimitValue = False
+      DataSet.Limits.UpperLimit.DataType = rdtDouble
+      DataSet.Limits.UpperLimit.IntegerLimitValue = 0
+      DataSet.Limits.UpperLimit.RealLimitValue = 25.00000000000000000
+      DataSet.Limits.UpperLimit.UseLimit = True
+      DataSet.Limits.RealValuesToSkip = <
+        item
+          RealValue = 1E30
+        end
+        item
+          RealValue = -1E30
+        end
+        item
+          RealValue = 3E30
+        end>
+      DataSet.Limits.LogTransform = False
+      DataSet.Limits.StoredEpsilon.Value = 0.00000100000000000
+      DataSet.ContourLimits.LowerLimit.BooleanLimitValue = False
+      DataSet.ContourLimits.LowerLimit.DataType = rdtDouble
+      DataSet.ContourLimits.LowerLimit.IntegerLimitValue = 0
+      DataSet.ContourLimits.LowerLimit.RealLimitValue = 15.00000000000000000
+      DataSet.ContourLimits.LowerLimit.UseLimit = True
+      DataSet.ContourLimits.UpperLimit.BooleanLimitValue = False
+      DataSet.ContourLimits.UpperLimit.DataType = rdtDouble
+      DataSet.ContourLimits.UpperLimit.IntegerLimitValue = 0
+      DataSet.ContourLimits.UpperLimit.RealLimitValue = 25.00000000000000000
+      DataSet.ContourLimits.UpperLimit.UseLimit = True
+      DataSet.ContourLimits.RealValuesToSkip = <
+        item
+          RealValue = 1E30
+        end
+        item
+          RealValue = -1E30
+        end
+        item
+          RealValue = 3E30
+        end>
+      DataSet.ContourLimits.LogTransform = False
+      DataSet.ContourLimits.StoredEpsilon.Value = 0.00000100000000000
+      DataSet.Lock = []
+      DataSet.Orientation = dsoTop
+      DataSet.TwoDInterpolatorClass = 'TLinearSfrpackInterpolator'
+      DataSet.TwoDInterpolator.Anisotropy = 1.00000000000000000
+      DataSet.AngleType = atNone
+      DataSet.ContourInterval.Value = 0.00000000000000000
+      DataSet.PestParametersUsed = False
+      DataSet.PestParametersAllowed = True
+      DataSet.TemplateNeeded = False
+      DataSet.UseValuesForObservations = False
+      DataSet.StoredObservationDistance.Value = 0.00000000000000000
+      DataSet.CompressedData = {
+        010000000A0000000A0000001401000000000000789CFBFFFFFF7F4606068648
+        20F664C863286148652862280692C960760A83024312432590F400F21281FC78
+        8600064320190C267DC0A43F504D16548F21506D39432690950164A531E403CD
+        CB652865C801EAB6028A20ABF504CA14805540EC0A03AAC901AA4D05BA208841
+        8341098FAD4A0C9A40F1513054012391988948CC4C24662112B31289D988C4EC
+        44620E223127911816D6B03082F98D0DC9BE5175F455370A061BB07400120E7D
+        8FCD417482CC713310BD60D52A53107DC0A2CF0444331C2F3406AB0B0D3502D1
+        0D8F2D0CC1F28532060E1073F41C90CC53A0B279B8DCF7006A9E029A790B8834
+        AF016ADE01A8790C9610F31CA0E62550D9BC8641EA3E0532CD23363E488DDF86
+        C190FE00D2BAC72D}
+    end
+    item
+      DataSetClass = 'TDataArray'
+      DataSetFormula = 'Head_P1_S1_L1'
+      DataSet.Name = 'Head_P1_S1'
+      DataSet.Classification = 'Model Results|3D Data'
+      DataSet.CheckMax = False
+      DataSet.CheckMin = False
+      DataSet.Comment = 
+        'read from: "C:\Users\harin\hydro-portfolio\modelmuse\first_model' +
+        '.bhd" on 27-10-2026 11:15:32'#13#10'Stress Period: 1'#13#10'Time Step: 1'#13#10'El' +
+        'apsed Time: 1'#13#10'File last modified on: 25-10-2026 13:26:30'#13#10#13#10'Min' +
+        'imum value: 15'#13#10'Maximum value: 25'
+      DataSet.DataType = rdtDouble
+      DataSet.EvaluatedAt = eaBlocks
+      DataSet.Limits.LowerLimit.BooleanLimitValue = False
+      DataSet.Limits.LowerLimit.DataType = rdtDouble
+      DataSet.Limits.LowerLimit.IntegerLimitValue = 0
+      DataSet.Limits.LowerLimit.RealLimitValue = 15.00000000000000000
+      DataSet.Limits.LowerLimit.UseLimit = True
+      DataSet.Limits.UpperLimit.BooleanLimitValue = False
+      DataSet.Limits.UpperLimit.DataType = rdtDouble
+      DataSet.Limits.UpperLimit.IntegerLimitValue = 0
+      DataSet.Limits.UpperLimit.RealLimitValue = 25.00000000000000000
+      DataSet.Limits.UpperLimit.UseLimit = True
+      DataSet.Limits.RealValuesToSkip = <
+        item
+          RealValue = 1E30
+        end
+        item
+          RealValue = -1E30
+        end
+        item
+          RealValue = 3E30
+        end>
+      DataSet.Limits.LogTransform = False
+      DataSet.Limits.StoredEpsilon.Value = 0.00000100000000000
+      DataSet.ContourLimits.LowerLimit.BooleanLimitValue = False
+      DataSet.ContourLimits.LowerLimit.DataType = rdtDouble
+      DataSet.ContourLimits.LowerLimit.IntegerLimitValue = 0
+      DataSet.ContourLimits.LowerLimit.RealLimitValue = 15.00000000000000000
+      DataSet.ContourLimits.LowerLimit.UseLimit = True
+      DataSet.ContourLimits.UpperLimit.BooleanLimitValue = False
+      DataSet.ContourLimits.UpperLimit.DataType = rdtDouble
+      DataSet.ContourLimits.UpperLimit.IntegerLimitValue = 0
+      DataSet.ContourLimits.UpperLimit.RealLimitValue = 25.00000000000000000
+      DataSet.ContourLimits.UpperLimit.UseLimit = True
+      DataSet.ContourLimits.RealValuesToSkip = <
+        item
+          RealValue = 1E30
+        end
+        item
+          RealValue = -1E30
+        end
+        item
+          RealValue = 3E30
+        end>
+      DataSet.ContourLimits.LogTransform = False
+      DataSet.ContourLimits.StoredEpsilon.Value = 0.00000100000000000
+      DataSet.Lock = []
+      DataSet.Orientation = dso3D
+      DataSet.AngleType = atNone
+      DataSet.ContourInterval.Value = 0.00000000000000000
+      DataSet.PestParametersUsed = False
+      DataSet.PestParametersAllowed = True
+      DataSet.TemplateNeeded = False
+      DataSet.UseValuesForObservations = False
+      DataSet.StoredObservationDistance.Value = 0.00000000000000000
+      DataSet.CompressedData = {
+        010000000A0000000A000000E600000000000000789CFBFFFFFF7F4606060635
+        202E664865286150602863C8644804D229407E1A9055CA9003164F63C8672862
+        C805F31319AC80221E4015894075F10C010C864032184CFA00C9148651305401
+        2391988948CC4C24662112B31289D988C4EC44620E223127911816D6B03082F9
+        8D0DC9BE5175F455370A061BB07400120E7D8FCD417482CC713310BD60D52A53
+        107DC0A2CF0444331C2F3406AB0B0D3502D10D8F2D0CC1F28532060E1073F41C
+        90CC53A0B279B8DCF7006A9E029A790B8834AF016ADE01A8790C9610F31CA0E6
+        2550D9BC8641EA3E0532CD23363E488DDF86C190FE003448B550}
+    end
+    item
+      DataSetClass = 'TDataArray'
+      DataSetFormula = '1E30'
+      DataSet.Name = 'Water_Table_P1_S1'
+      DataSet.Classification = 'Model Results|Water Table'
+      DataSet.CheckMax = False
+      DataSet.CheckMin = False
+      DataSet.Comment = 
+        'read from: "C:\Users\harin\hydro-portfolio\modelmuse\first_model' +
+        '.bhd" on 27-10-2026 11:15:32'#13#10'Stress Period: 1'#13#10'Time Step: 1'#13#10'El' +
+        'apsed Time: 1'#13#10'File last modified on: 25-10-2026 13:26:30'#13#10#13#10'Min' +
+        'imum value: 15'#13#10'Maximum value: 25'
+      DataSet.DataType = rdtDouble
+      DataSet.EvaluatedAt = eaBlocks
+      DataSet.Limits.LowerLimit.BooleanLimitValue = False
+      DataSet.Limits.LowerLimit.DataType = rdtDouble
+      DataSet.Limits.LowerLimit.IntegerLimitValue = 0
+      DataSet.Limits.LowerLimit.RealLimitValue = 15.00000000000000000
+      DataSet.Limits.LowerLimit.UseLimit = True
+      DataSet.Limits.UpperLimit.BooleanLimitValue = False
+      DataSet.Limits.UpperLimit.DataType = rdtDouble
+      DataSet.Limits.UpperLimit.IntegerLimitValue = 0
+      DataSet.Limits.UpperLimit.RealLimitValue = 25.00000000000000000
+      DataSet.Limits.UpperLimit.UseLimit = True
+      DataSet.Limits.RealValuesToSkip = <
+        item
+          RealValue = 1E30
+        end
+        item
+          RealValue = -1E30
+        end
+        item
+          RealValue = 3E30
+        end>
+      DataSet.Limits.LogTransform = False
+      DataSet.Limits.StoredEpsilon.Value = 0.00000100000000000
+      DataSet.ContourLimits.LowerLimit.BooleanLimitValue = False
+      DataSet.ContourLimits.LowerLimit.DataType = rdtDouble
+      DataSet.ContourLimits.LowerLimit.IntegerLimitValue = 0
+      DataSet.ContourLimits.LowerLimit.RealLimitValue = 15.00000000000000000
+      DataSet.ContourLimits.LowerLimit.UseLimit = True
+      DataSet.ContourLimits.UpperLimit.BooleanLimitValue = False
+      DataSet.ContourLimits.UpperLimit.DataType = rdtDouble
+      DataSet.ContourLimits.UpperLimit.IntegerLimitValue = 0
+      DataSet.ContourLimits.UpperLimit.RealLimitValue = 25.00000000000000000
+      DataSet.ContourLimits.UpperLimit.UseLimit = True
+      DataSet.ContourLimits.RealValuesToSkip = <
+        item
+          RealValue = 1E30
+        end
+        item
+          RealValue = -1E30
+        end
+        item
+          RealValue = 3E30
+        end>
+      DataSet.ContourLimits.LogTransform = False
+      DataSet.ContourLimits.StoredEpsilon.Value = 0.00000100000000000
+      DataSet.Lock = []
+      DataSet.Orientation = dsoTop
+      DataSet.TwoDInterpolatorClass = 'TLinearSfrpackInterpolator'
+      DataSet.TwoDInterpolator.Anisotropy = 1.00000000000000000
       DataSet.AngleType = atNone
       DataSet.ContourInterval.Value = 0.00000000000000000
       DataSet.PestParametersUsed = False

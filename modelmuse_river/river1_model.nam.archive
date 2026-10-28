@@ -1,0 +1,16 @@
+# Name File for MODFLOW created on 28-10-2026 by ModelMuse Version 5.3.0.0
+BEGIN OPTIONS
+  LIST ..\..\output\output.river1_model\river1_model.lst
+  PRINT_INPUT
+  SAVE_FLOWS
+END OPTIONS
+
+BEGIN PACKAGES
+  DIS6         ..\..\model\model.river1_model\river1_model.dis  DIS
+  IC6          ..\..\model\model.river1_model\river1_model.ic  IC
+  NPF6         ..\..\model\model.river1_model\river1_model.npf  NPF
+  OC6          ..\..\model\model.river1_model\river1_model.oc  OC
+  CHD6         ..\..\model\model.river1_model\river1_model.chd  CHD-1
+  RIV6         ..\..\model\model.river1_model\river1_model.riv  RIV-1
+  RCH6         ..\..\model\model.river1_model\river1_model.rch  RCH-1
+END PACKAGES

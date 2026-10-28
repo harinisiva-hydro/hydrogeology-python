@@ -1,0 +1,436 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.7.0 02/05/2026
+
+   MODFLOW 6 compiled Feb 05 2026 22:36:44 with Intel(R) Fortran Intel(R) 64
+   Compiler Classic for applications running on Intel(R) 64, Version 2021.6.0
+                             Build 20220226_000000
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+As a work of the United States Government, this USGS product is 
+in the public domain within the United States. You can copy, 
+modify, distribute, and perform the work, even for commercial 
+purposes, all without asking permission. Additionally, USGS 
+waives copyright and related rights in the work worldwide 
+through CC0 1.0 Universal Public Domain Dedication 
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The following GNU Lesser General Public License (LGPL) libraries
+are used in this USGS product:
+
+    SPARSKIT version 2.0
+      ilut, luson, and qsplit 
+      (https://www-users.cse.umn.edu/~saad/software/SPARSKIT/)
+
+    RCM - Reverse Cuthill McKee Ordering
+      (https://people.math.sc.edu/Burkardt/f_src/rcm/rcm.html)
+
+    BLAS - Basic Linear Algebra Subprograms Level 1
+      (https://people.math.sc.edu/Burkardt/f_src/blas1_d/blas1_d.html)
+
+    SPARSEKIT - Sparse Matrix Utility Package
+      amux, dperm, dvperm, rperm, and cperm
+      (https://people.sc.fsu.edu/~jburkardt/f77_src/sparsekit/sparsekit.html)
+
+The following BSD-3 License libraries are used in this USGS product:
+
+    Modern Fortran DAG Library
+      Copyright (c) 2018, Jacob Williams
+      All rights reserved.
+      (https://github.com/jacobwilliams/daglib)
+
+MODFLOW 6 compiler options: /Isrc\libmf6_external.a.p /Isrc\libmf6core.a.p
+/Isrc /I..\src /MT /nologo /warn:general /warn:truncated_source /stand:f18
+/O2 /fpe:0 /heap-arrays:0 /traceback /fpp /Qdiag-disable:7416
+/Qdiag-disable:7025 /Qdiag-disable:5268 /Qdiag-disable:10448
+/Fdsrc\libmf6core.a.p\Utilities_compilerversion.F90.pdb
+/module:src\libmf6core.a.p
+/Fosrc/libmf6core.a.p/Utilities_compilerversion.F90.obj /c
+
+System command used to initiate simulation:
+C:\Users\harin\AppData\Local\flopy\bin\mf6.exe
+
+MODFLOW was compiled using uniform precision.
+
+Real Variables
+  KIND: 8
+  TINY (smallest non-zero value):    2.225074-308
+  HUGE (largest value):    1.797693+308
+  PRECISION: 15
+  SIZE IN BITS: 64
+
+Integer Variables
+  KIND: 4
+  HUGE (largest value): 2147483647
+  SIZE IN BITS: 32
+
+Long Integer Variables
+  KIND: 8
+  HUGE (largest value): 9223372036854775807
+  SIZE IN BITS: 64
+
+Logical Variables
+  KIND: 4
+  SIZE IN BITS: 32
+ 
+ NAMEFILE OPTIONS:
+    STRESS PACKAGE INPUT WILL BE PRINTED FOR ALL MODEL STRESS PACKAGES
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+ END NAMEFILE OPTIONS:
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM MEMPATH: __INPUT__/MODFLOW/DIS                             
+
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM MEMPATH: __INPUT__/MODFLOW/NPF                             
+
+
+ IC -- Initial Conditions Package, Version 8, 3/28/2015 input read from mempath: __INPUT__/MODFLOW/IC                              
+
+
+ Setting Discretization Options
+    Model length unit [0=UND, 1=FEET, 2=METERS, 3=CENTIMETERS] set as 2
+    XORIGIN = .000000000000000
+    YORIGIN = -1000.000000000000
+    ANGROT = .000000000000000
+ End Setting Discretization Options
+
+ Setting Discretization Dimensions
+    NLAY = 1
+    NROW = 10
+    NCOL = 10
+ End Setting Discretization Dimensions
+
+ Setting Discretization Griddata
+    DELR set from input file
+    DELC set from input file
+    TOP set from input file
+    BOTM set from input file
+    IDOMAIN set from input file
+ End Setting Discretization Griddata
+
+ Setting NPF Options
+    Cell-by-cell flow information will be saved to binary file whenever ICBCFL is not zero.
+    Specific discharge will be calculated at cell centers and written to DATA-SPDIS in budget file when requested.
+    Saturation will be written to DATA-SAT in budget file when requested.
+ End Setting NPF Options
+
+ Setting NPF Griddata
+    ICELLTYPE set from input file
+    K set from input file
+    K33 set from input file
+    K22 set from input file
+    ANGLE1 set from input file
+    ANGLE2 set from input file
+    ANGLE3 set from input file
+ End Setting NPF Griddata
+
+
+ RIV -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/MODFLOW/RIV-1                           
+
+ PROCESSING RIV BASE OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+    LISTS OF RIV CELLS WILL BE PRINTED.
+    RIV BOUNDARIES HAVE NAMES IN LAST COLUMN.
+ END OF RIV BASE OPTIONS
+
+ PROCESSING RIV OPTIONS
+ END OF RIV OPTIONS
+
+ PROCESSING RIV BASE DIMENSIONS
+    MAXBOUND =      10
+ END OF RIV BASE DIMENSIONS
+
+ RCH -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/MODFLOW/RCH-1                           
+
+ PROCESSING RCH BASE OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+    LISTS OF RCH CELLS WILL BE PRINTED.
+    RCH BOUNDARIES HAVE NAMES IN LAST COLUMN.
+ END OF RCH BASE OPTIONS
+
+ PROCESSING RCH OPTIONS
+    RECHARGE WILL BE APPLIED TO SPECIFIED CELL.
+ END OF RCH OPTIONS
+
+ PROCESSING RCH BASE DIMENSIONS
+    MAXBOUND =     100
+ END OF RCH BASE DIMENSIONS
+
+ CHD -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM MEMPATH: __INPUT__/MODFLOW/CHD-1                           
+
+ PROCESSING CHD BASE OPTIONS
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+    LISTS OF CHD CELLS WILL BE PRINTED.
+    CHD BOUNDARIES HAVE NAMES IN LAST COLUMN.
+ END OF CHD BASE OPTIONS
+
+ PROCESSING CHD BASE DIMENSIONS
+    MAXBOUND =      10
+ END OF CHD BASE DIMENSIONS
+    STRT set from input file
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1016
+      FILE NAME: river_model.dis.grb
+
+ OPENED river_model.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1016   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+
+ PROCESSING OC OPTIONS
+
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1017
+      FILE NAME: river_model.cbc
+
+ OPENED river_model.cbc
+ FILE TYPE:DATA(BINARY)   UNIT 1017   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1018
+      FILE NAME: river_model.bhd
+
+ OPENED river_model.bhd
+ FILE TYPE:DATA(BINARY)   UNIT 1018   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+start timestep kper="1" kstp="1" mode="normal"
+
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      ALL TIME STEPS WILL BE SAVED
+      ALL TIME STEPS WILL BE PRINTED
+      ALL TIME STEPS WILL BE SAVED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+ --------------------------------------------------------------------------------------------
+  RIV NO.    LAYER    ROW     COL   BOUNDNAME                                     IFACE      
+ --------------------------------------------------------------------------------------------
+     1         1       1      10    RIVER_E                                   0.00000000     
+     2         1       2      10    RIVER_E                                   0.00000000     
+     3         1       3      10    RIVER_E                                   0.00000000     
+     4         1       4      10    RIVER_E                                   0.00000000     
+     5         1       5      10    RIVER_E                                   0.00000000     
+     6         1       6      10    RIVER_E                                   0.00000000     
+     7         1       7      10    RIVER_E                                   0.00000000     
+     8         1       8      10    RIVER_E                                   0.00000000     
+     9         1       9      10    RIVER_E                                   0.00000000     
+     10        1      10      10    RIVER_E                                   0.00000000     
+ --------------------------------------------------------------------------------------------
+
+
+ --------------------------------------------------------------------------------------------
+  RCH NO.    LAYER    ROW     COL   BOUNDNAME                                     IFACE      
+ --------------------------------------------------------------------------------------------
+     1         1      10      10    RECHARGE_ALL                              0.00000000     
+     2         1      10       9    RECHARGE_ALL                              0.00000000     
+     3         1      10       8    RECHARGE_ALL                              0.00000000     
+     4         1      10       7    RECHARGE_ALL                              0.00000000     
+     5         1      10       6    RECHARGE_ALL                              0.00000000     
+     6         1      10       5    RECHARGE_ALL                              0.00000000     
+     7         1      10       4    RECHARGE_ALL                              0.00000000     
+     8         1      10       3    RECHARGE_ALL                              0.00000000     
+     9         1      10       2    RECHARGE_ALL                              0.00000000     
+     10        1      10       1    RECHARGE_ALL                              0.00000000     
+     11        1       9      10    RECHARGE_ALL                              0.00000000     
+     12        1       9       9    RECHARGE_ALL                              0.00000000     
+     13        1       9       8    RECHARGE_ALL                              0.00000000     
+     14        1       9       7    RECHARGE_ALL                              0.00000000     
+     15        1       9       6    RECHARGE_ALL                              0.00000000     
+     16        1       9       5    RECHARGE_ALL                              0.00000000     
+     17        1       9       4    RECHARGE_ALL                              0.00000000     
+     18        1       9       3    RECHARGE_ALL                              0.00000000     
+     19        1       9       2    RECHARGE_ALL                              0.00000000     
+     20        1       9       1    RECHARGE_ALL                              0.00000000     
+     21        1       8      10    RECHARGE_ALL                              0.00000000     
+     22        1       8       9    RECHARGE_ALL                              0.00000000     
+     23        1       8       8    RECHARGE_ALL                              0.00000000     
+     24        1       8       7    RECHARGE_ALL                              0.00000000     
+     25        1       8       6    RECHARGE_ALL                              0.00000000     
+     26        1       8       5    RECHARGE_ALL                              0.00000000     
+     27        1       8       4    RECHARGE_ALL                              0.00000000     
+     28        1       8       3    RECHARGE_ALL                              0.00000000     
+     29        1       8       2    RECHARGE_ALL                              0.00000000     
+     30        1       8       1    RECHARGE_ALL                              0.00000000     
+     31        1       7      10    RECHARGE_ALL                              0.00000000     
+     32        1       7       9    RECHARGE_ALL                              0.00000000     
+     33        1       7       8    RECHARGE_ALL                              0.00000000     
+     34        1       7       7    RECHARGE_ALL                              0.00000000     
+     35        1       7       6    RECHARGE_ALL                              0.00000000     
+     36        1       7       5    RECHARGE_ALL                              0.00000000     
+     37        1       7       4    RECHARGE_ALL                              0.00000000     
+     38        1       7       3    RECHARGE_ALL                              0.00000000     
+     39        1       7       2    RECHARGE_ALL                              0.00000000     
+     40        1       7       1    RECHARGE_ALL                              0.00000000     
+     41        1       6      10    RECHARGE_ALL                              0.00000000     
+     42        1       6       9    RECHARGE_ALL                              0.00000000     
+     43        1       6       8    RECHARGE_ALL                              0.00000000     
+     44        1       6       7    RECHARGE_ALL                              0.00000000     
+     45        1       6       6    RECHARGE_ALL                              0.00000000     
+     46        1       6       5    RECHARGE_ALL                              0.00000000     
+     47        1       6       4    RECHARGE_ALL                              0.00000000     
+     48        1       6       3    RECHARGE_ALL                              0.00000000     
+     49        1       6       2    RECHARGE_ALL                              0.00000000     
+     50        1       6       1    RECHARGE_ALL                              0.00000000     
+     51        1       5      10    RECHARGE_ALL                              0.00000000     
+     52        1       5       9    RECHARGE_ALL                              0.00000000     
+     53        1       5       8    RECHARGE_ALL                              0.00000000     
+     54        1       5       7    RECHARGE_ALL                              0.00000000     
+     55        1       5       6    RECHARGE_ALL                              0.00000000     
+     56        1       5       5    RECHARGE_ALL                              0.00000000     
+     57        1       5       4    RECHARGE_ALL                              0.00000000     
+     58        1       5       3    RECHARGE_ALL                              0.00000000     
+     59        1       5       2    RECHARGE_ALL                              0.00000000     
+     60        1       5       1    RECHARGE_ALL                              0.00000000     
+     61        1       4      10    RECHARGE_ALL                              0.00000000     
+     62        1       4       9    RECHARGE_ALL                              0.00000000     
+     63        1       4       8    RECHARGE_ALL                              0.00000000     
+     64        1       4       7    RECHARGE_ALL                              0.00000000     
+     65        1       4       6    RECHARGE_ALL                              0.00000000     
+     66        1       4       5    RECHARGE_ALL                              0.00000000     
+     67        1       4       4    RECHARGE_ALL                              0.00000000     
+     68        1       4       3    RECHARGE_ALL                              0.00000000     
+     69        1       4       2    RECHARGE_ALL                              0.00000000     
+     70        1       4       1    RECHARGE_ALL                              0.00000000     
+     71        1       3      10    RECHARGE_ALL                              0.00000000     
+     72        1       3       9    RECHARGE_ALL                              0.00000000     
+     73        1       3       8    RECHARGE_ALL                              0.00000000     
+     74        1       3       7    RECHARGE_ALL                              0.00000000     
+     75        1       3       6    RECHARGE_ALL                              0.00000000     
+     76        1       3       5    RECHARGE_ALL                              0.00000000     
+     77        1       3       4    RECHARGE_ALL                              0.00000000     
+     78        1       3       3    RECHARGE_ALL                              0.00000000     
+     79        1       3       2    RECHARGE_ALL                              0.00000000     
+     80        1       3       1    RECHARGE_ALL                              0.00000000     
+     81        1       2      10    RECHARGE_ALL                              0.00000000     
+     82        1       2       9    RECHARGE_ALL                              0.00000000     
+     83        1       2       8    RECHARGE_ALL                              0.00000000     
+     84        1       2       7    RECHARGE_ALL                              0.00000000     
+     85        1       2       6    RECHARGE_ALL                              0.00000000     
+     86        1       2       5    RECHARGE_ALL                              0.00000000     
+     87        1       2       4    RECHARGE_ALL                              0.00000000     
+     88        1       2       3    RECHARGE_ALL                              0.00000000     
+     89        1       2       2    RECHARGE_ALL                              0.00000000     
+     90        1       2       1    RECHARGE_ALL                              0.00000000     
+     91        1       1      10    RECHARGE_ALL                              0.00000000     
+     92        1       1       9    RECHARGE_ALL                              0.00000000     
+     93        1       1       8    RECHARGE_ALL                              0.00000000     
+     94        1       1       7    RECHARGE_ALL                              0.00000000     
+     95        1       1       6    RECHARGE_ALL                              0.00000000     
+     96        1       1       5    RECHARGE_ALL                              0.00000000     
+     97        1       1       4    RECHARGE_ALL                              0.00000000     
+     98        1       1       3    RECHARGE_ALL                              0.00000000     
+     99        1       1       2    RECHARGE_ALL                              0.00000000     
+    100        1       1       1    RECHARGE_ALL                              0.00000000     
+ --------------------------------------------------------------------------------------------
+
+
+ --------------------------------------------------------------------------------------------
+  CHD NO.    LAYER    ROW     COL   BOUNDNAME                                     IFACE      
+ --------------------------------------------------------------------------------------------
+     1         1       1       1    LEFT_25                                   0.00000000     
+     2         1       2       1    LEFT_25                                   0.00000000     
+     3         1       3       1    LEFT_25                                   0.00000000     
+     4         1       4       1    LEFT_25                                   0.00000000     
+     5         1       5       1    LEFT_25                                   0.00000000     
+     6         1       6       1    LEFT_25                                   0.00000000     
+     7         1       7       1    LEFT_25                                   0.00000000     
+     8         1       8       1    LEFT_25                                   0.00000000     
+     9         1       9       1    LEFT_25                                   0.00000000     
+     10        1      10       1    LEFT_25                                   0.00000000     
+ --------------------------------------------------------------------------------------------
+
+
+
+ SLN_1 INNER ITERATION SUMMARY
+ --------------------------------------------------------------------------------------------------------------------------------------
+      TOTAL      OUTER      INNER                                                            MAXIMUM                                   
+  ITERATION  ITERATION  ITERATION  MAXIMUM CHANGE      MAXIMUM CHANGE MODEL-(CELLID)        RESIDUAL    MAXIMUM RESIDUAL MODEL-(CELLID)
+ --------------------------------------------------------------------------------------------------------------------------------------
+          1          1          1       4.0853387                     1_GWF-(1,10,2)       70.834776                      1_GWF-(1,2,9)
+          2          1          2       2.1496791                      1_GWF-(1,1,3)      -38.335236                      1_GWF-(1,2,9)
+          3          1          3      0.85330859                      1_GWF-(1,1,5)      -16.342201                      1_GWF-(1,3,8)
+          4          1          4       1.0347731                      1_GWF-(1,3,6)      -19.407521                      1_GWF-(1,2,8)
+          5          1          5      0.30585441                      1_GWF-(1,2,8)      -2.6326260                      1_GWF-(1,1,9)
+          6          1          6  4.52146344E-02                      1_GWF-(1,1,9)      0.78329906                      1_GWF-(1,2,2)
+          7          1          7  1.81629834E-02                     1_GWF-(1,10,4)      0.41368920                      1_GWF-(1,2,8)
+          8          1          8 -7.98244451E-03                      1_GWF-(1,1,5)     -0.12897749                      1_GWF-(1,9,8)
+          9          1          9  2.63346378E-03                      1_GWF-(1,9,8) -4.32978803E-02                      1_GWF-(1,2,4)
+         10          1         10  5.26716506E-04                     1_GWF-(1,10,7)  1.03986200E-02                      1_GWF-(1,3,6)
+         11          1         11  1.06874737E-04                      1_GWF-(1,3,3)  1.71917772E-03                     1_GWF-(1,1,10)
+         12          1         12  2.28378475E-05                      1_GWF-(1,1,4) -5.24287235E-04                      1_GWF-(1,2,7)
+         13          2          1  5.49151861E-06                      1_GWF-(1,1,7) -1.13544243E-04                      1_GWF-(1,2,6)
+ --------------------------------------------------------------------------------------------------------------------------------------
+
+
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL MODFLOW          PACKAGE NPF             CONNECTED TO MODEL MODFLOW          PACKAGE NPF              ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING         DATA-SAT IN MODEL MODFLOW          PACKAGE NPF             CONNECTED TO MODEL MODFLOW          PACKAGE NPF              ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL MODFLOW          PACKAGE MODFLOW         CONNECTED TO MODEL MODFLOW          PACKAGE RIV-1            ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL MODFLOW          PACKAGE MODFLOW         CONNECTED TO MODEL MODFLOW          PACKAGE RCH-1            ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL MODFLOW          PACKAGE MODFLOW         CONNECTED TO MODEL MODFLOW          PACKAGE CHD-1            ON UNIT   1017 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1018 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 RIV =           0.0000                   RIV =           0.0000     RIV-1                            
+                 RCH =         900.0000                   RCH =         900.0000     RCH-1                            
+                 CHD =          50.0000                   CHD =          50.0000     CHD-1                            
+
+            TOTAL IN =         950.0000              TOTAL IN =         950.0000
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 RIV =         950.0000                   RIV =         950.0000     RIV-1                            
+                 RCH =           0.0000                   RCH =           0.0000     RCH-1                            
+                 CHD =           0.0000                   CHD =           0.0000     CHD-1                            
+
+           TOTAL OUT =         950.0000             TOTAL OUT =         950.0000
+
+            IN - OUT =      -8.0122E-05              IN - OUT =      -8.0122E-05
+
+ PERCENT DISCREPANCY =          -0.00     PERCENT DISCREPANCY =          -0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                    SECONDS     MINUTES      HOURS       DAYS        YEARS
+                    -----------------------------------------------------------
+   TIME STEP LENGTH  86400.      1440.0      24.000      1.0000     2.73785E-03
+ STRESS PERIOD TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+         TOTAL TIME  86400.      1440.0      24.000      1.0000     2.73785E-03
+
+
+end timestep
+

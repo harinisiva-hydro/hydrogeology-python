@@ -1,0 +1,12 @@
+# Output Control file created on 28-10-2026 by ModelMuse version 5.3.0.0.
+BEGIN OPTIONS
+  BUDGET FILEOUT 'river1_model.cbc'
+  HEAD FILEOUT 'river1_model.bhd'
+END OPTIONS
+
+BEGIN PERIOD      1
+  SAVE HEAD ALL
+  PRINT BUDGET ALL
+  SAVE BUDGET ALL
+END PERIOD 
+

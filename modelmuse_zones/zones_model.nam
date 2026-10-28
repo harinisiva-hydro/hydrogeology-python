@@ -1,0 +1,15 @@
+# Name File for MODFLOW created on 28-10-2026 by ModelMuse Version 5.3.0.0
+BEGIN OPTIONS
+  LIST zones_model.lst
+  PRINT_INPUT
+  SAVE_FLOWS
+END OPTIONS
+
+BEGIN PACKAGES
+  DIS6         zones_model.dis  DIS
+  IC6          zones_model.ic  IC
+  NPF6         zones_model.npf  NPF
+  OC6          zones_model.oc  OC
+  CHD6         zones_model.chd  CHD-1
+  RCH6         zones_model.rch  RCH-1
+END PACKAGES

@@ -845,63 +845,38 @@ object PhastModel: TPhastModel
   FilesToArchive.Strings = (
     'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.gpt')
   ModelInputFiles.Strings = (
-    'C:\Users\harin\hydro-portfolio\modelmuse_recharge\mfsim.nam'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\mfsim.nam'
     
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.chd'
+      'C:\Users\harin\hydro-portfolio\modelmuse_well\RunModflow.Bat.arc' +
+      'hive'
     
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.dis'
+      'C:\Users\harin\hydro-portfolio\modelmuse_well\usgs.well_model.re' +
+      'ference'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.chd'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.dis'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.gsf'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.ic'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.ims'
     
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.gsf'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.ic'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.ims'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.nam.archive'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.npf'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.oc'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.rch'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.tdis'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\RunModflow.Bat' +
-      '.archive'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\usgs.recharge_' +
-      'model.reference')
+      'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.nam.arc' +
+      'hive'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.npf'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.oc'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.rch'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.tdis'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.wel')
   ModelOutputFiles.Strings = (
-    'C:\Users\harin\hydro-portfolio\modelmuse_recharge\mfsim.lst'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\mfsim.lst'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.bhd'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.cbc'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.dis.grb'
     
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.bhd'
+      'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.InnerSo' +
+      'lution.CSV'
+    'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.lst'
     
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.cbc'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.dis.grb'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.InnerSolution.CSV'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.lst'
-    
-      'C:\Users\harin\hydro-portfolio\modelmuse_recharge\recharge_model' +
-      '.OuterSolution.CSV')
+      'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.OuterSo' +
+      'lution.CSV')
   ModelFileName = 'C:\Users\harin\hydro-portfolio\modelmuse_well\well_model.gpt'
   ModflowOptions.Description.Strings = (
     'First model, 10x10 grid')
@@ -1664,6 +1639,130 @@ object PhastModel: TPhastModel
     end
     item
       ClassTypeName = 'TScreenObject'
+      ElevationFormula = '(Model_Top + Upper_Aquifer_Bottom) / 2.'
+      Points = <
+        item
+          X = 473.11827956989250000
+          Y = -459.67741935483790000
+        end>
+      ScreenObject.Name = 'Well_1'
+      ScreenObject.CellSize = 1.00000000000000000
+      ScreenObject.CellSizeUsed = False
+      ScreenObject.ColorLine = False
+      ScreenObject.ElevationCount = ecOne
+      ScreenObject.ElevationFormula = '(Model_Top + Upper_Aquifer_Bottom) / 2.'
+      ScreenObject.EvaluatedAt = eaBlocks
+      ScreenObject.FillColor = clBlack
+      ScreenObject.FillScreenObject = False
+      ScreenObject.HigherElevationFormula = '0.'
+      ScreenObject.LineColor = clBlack
+      ScreenObject.LowerElevationFormula = '0.'
+      ScreenObject.Selected = False
+      ScreenObject.SetValuesByInterpolation = False
+      ScreenObject.SetValuesOfEnclosedCells = False
+      ScreenObject.SetValuesOfIntersectedCells = True
+      ScreenObject.ViewDirection = vdTop
+      ScreenObject.InterpValues = <>
+      ScreenObject.ModflowWellBoundary.Values = <
+        item
+          StartTime = -1.00000000000000000
+          PumpingRate = '-300'
+          Multiplier = '1'
+          GwtConcentrations = <>
+        end>
+      ScreenObject.ModflowWellBoundary.Parameters = <>
+      ScreenObject.ModflowWellBoundary.FormulaInterpretation = fiSpecific
+      ScreenObject.ModflowWellBoundary.Interp = mimStepwise
+      ScreenObject.ModflowWellBoundary.PestPumpingRateMethod = ppmMultiply
+      ScreenObject.ModflowWellBoundary.PestMultiplierMethod = ppmMultiply
+      ScreenObject.ModflowWellBoundary.PestConcentrationFormulas = <>
+      ScreenObject.ModflowWellBoundary.PestConcentrationMethods = <>
+      ScreenObject.SectionStarts.DataType = rdtInteger
+      ScreenObject.SectionStarts.Count = 0
+      ScreenObject.SectionStarts.Values = (
+        0)
+      ScreenObject.ModpathParticles.ParticleDistribution = pdGrid
+      ScreenObject.ModpathParticles.GridParticles.LeftFace = False
+      ScreenObject.ModpathParticles.GridParticles.RightFace = False
+      ScreenObject.ModpathParticles.GridParticles.BackFace = False
+      ScreenObject.ModpathParticles.GridParticles.FrontFace = False
+      ScreenObject.ModpathParticles.GridParticles.BottomFace = False
+      ScreenObject.ModpathParticles.GridParticles.TopFace = False
+      ScreenObject.ModpathParticles.Used = False
+      ScreenObject.ModpathParticles.ReleaseTimes = <
+        item
+        end>
+      ScreenObject.UsedModels = <>
+      ScreenObject.PositionLocked = False
+      ScreenObject.SutraBoundaries.FluidSource.Values = <>
+      ScreenObject.SutraBoundaries.FluidSource.UseBCTime = False
+      ScreenObject.SutraBoundaries.FluidSource.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.FluidSource.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.MassEnergySource.Values = <>
+      ScreenObject.SutraBoundaries.MassEnergySource.UseBCTime = False
+      ScreenObject.SutraBoundaries.MassEnergySource.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.MassEnergySource.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedPressure.Values = <>
+      ScreenObject.SutraBoundaries.SpecifiedPressure.UseBCTime = False
+      ScreenObject.SutraBoundaries.SpecifiedPressure.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedPressure.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.Values = <>
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.UseBCTime = False
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.Observations.Times = <>
+      ScreenObject.SutraBoundaries.Observations.ObservationFormat = ofOBS
+      ScreenObject.SutraBoundaries.Lake.InitialStage = '0'
+      ScreenObject.SutraBoundaries.Lake.InitialConcentrationOrTemperature = '0'
+      ScreenObject.SutraBoundaries.Lake.FractionRechargeDiverted = '0'
+      ScreenObject.SutraBoundaries.Lake.FractionDischargeDiverted = '0'
+      ScreenObject.SutraBoundaries.Lake.IsUsed = False
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.Values = <>
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.UseBCTime = False
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestBoundaryValueMethod = ppmAdd
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestLowerFlowRateMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherPressureMethod = ppmAdd
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherFlowRateMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestUOutMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.Values = <>
+      ScreenObject.SutraBoundaries.GenTransportBoundary.UseBCTime = False
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestBoundaryValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestAssociatedValueMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherUMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestLowerFlowUMethod = ppmMultiply
+      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherFlowUMethod = ppmMultiply
+      ScreenObject.ObjectLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.ObjectLabel.Font.Color = clBlack
+      ScreenObject.ObjectLabel.Font.Height = -12
+      ScreenObject.ObjectLabel.Font.Name = 'Segoe UI'
+      ScreenObject.ObjectLabel.Font.Style = []
+      ScreenObject.ObjectLabel.OffSetX = 0
+      ScreenObject.ObjectLabel.OffSetY = 20
+      ScreenObject.ObjectLabel.Visible = False
+      ScreenObject.ObjectVertexLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.ObjectVertexLabel.Font.Color = clBlack
+      ScreenObject.ObjectVertexLabel.Font.Height = -12
+      ScreenObject.ObjectVertexLabel.Font.Name = 'Segoe UI'
+      ScreenObject.ObjectVertexLabel.Font.Style = []
+      ScreenObject.ObjectVertexLabel.OffSetX = 0
+      ScreenObject.ObjectVertexLabel.OffSetY = 20
+      ScreenObject.ObjectVertexLabel.Visible = False
+      ScreenObject.SectionLabel.Font.Charset = DEFAULT_CHARSET
+      ScreenObject.SectionLabel.Font.Color = clBlack
+      ScreenObject.SectionLabel.Font.Height = -12
+      ScreenObject.SectionLabel.Font.Name = 'Segoe UI'
+      ScreenObject.SectionLabel.Font.Style = []
+      ScreenObject.SectionLabel.OffSetX = 0
+      ScreenObject.SectionLabel.OffSetY = 20
+      ScreenObject.SectionLabel.Visible = False
+      ScreenObject.StoredMinimumFraction.Value = 0.00000000000000000
+      ScreenObject.QuadtreeRefinementLevel = 0
+      ScreenObject.DynamicTimesSeriesCollections = <>
+      SelectedVertices = <>
+    end
+    item
+      ClassTypeName = 'TScreenObject'
       DataSetNames.Strings = (
         'Head_P1_S1_L1')
       DataSetFormulas.Strings = (
@@ -2205,104 +2304,104 @@ object PhastModel: TPhastModel
           Values.Values = (
             100
             25.00000000000000000
-            24.68888854980469000
-            24.17777824401855000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333129882812000
-            18.62222099304199000
-            16.91110992431641000
+            24.40323448181152000
+            23.63523292541504000
+            22.72960281372070000
+            21.72335052490234000
+            20.63969993591308000
+            19.45711517333984000
+            18.14109802246094000
+            16.66242218017578000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333129882812000
-            18.62222290039062000
-            16.91111183166504000
+            24.37447166442871000
+            23.57286071777344000
+            22.63022422790527000
+            21.60075187683106000
+            20.53863334655762000
+            19.39054489135742000
+            18.10375785827637000
+            16.64616584777832000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666717529297000
-            22.55555534362793000
-            21.44444465637207000
-            20.13333320617676000
-            18.62222290039062000
-            16.91111183166504000
+            24.32179069519043000
+            23.45151710510254000
+            22.41768264770508000
+            21.31080245971680000
+            20.32353591918945000
+            19.26267814636230000
+            18.03722000122070000
+            16.61848640441894000
             15.00000000000000000
             25.00000000000000000
-            24.68889045715332000
-            24.17777824401855000
-            23.46666717529297000
-            22.55555725097656000
-            21.44444656372070000
-            20.13333511352539000
-            18.62222290039062000
-            16.91111183166504000
+            24.26117897033692000
+            23.29373168945313000
+            22.07818603515625000
+            20.70123672485352000
+            19.98202514648437000
+            19.09941673278809000
+            17.96395874023437000
+            16.59055519104004000
             15.00000000000000000
             25.00000000000000000
-            24.68889045715332000
-            24.17778015136719000
-            23.46666908264160000
-            22.55555725097656000
-            21.44444656372070000
-            20.13333511352539000
-            18.62222290039062000
-            16.91111183166504000
+            24.22919082641602000
+            23.18404769897461000
+            21.70009613037109000
+            19.23392868041992000
+            19.60391235351563000
+            18.98900222778320000
+            17.92864036560059000
+            16.57977676391602000
             15.00000000000000000
             25.00000000000000000
-            24.68889045715332000
-            24.17778015136719000
-            23.46666908264160000
-            22.55555725097656000
-            21.44444465637207000
-            20.13333511352539000
-            18.62222290039062000
-            16.91111183166504000
+            24.27153778076172000
+            23.31316757202148000
+            22.10422134399414000
+            20.73047256469727000
+            20.01069259643555000
+            19.12403678894043000
+            17.98182678222656000
+            16.59991073608398000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777824401855000
-            23.46666717529297000
-            22.55555725097656000
-            21.44444465637207000
-            20.13333320617676000
-            18.62222290039062000
-            16.91111183166504000
+            24.34379386901855000
+            23.49286460876465000
+            22.47314453125000000
+            21.37304878234863000
+            20.38435173034668000
+            19.31462669372559000
+            18.07471656799316000
+            16.63804435729980000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777824401855000
-            23.46666526794434000
-            22.55555534362793000
-            21.44444465637207000
-            20.13333320617676000
-            18.62222099304199000
-            16.91111183166504000
+            24.41077041625977000
+            23.64135360717773000
+            22.72244071960449000
+            21.70422363281250000
+            20.63903808593750000
+            19.47540283203125000
+            18.16436767578125000
+            16.67754745483398000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333320617676000
-            18.62222099304199000
-            16.91110992431641000
+            24.45793914794922000
+            23.73933410644531000
+            22.87104225158692000
+            21.88236999511719000
+            20.79217529296875000
+            19.58357810974121000
+            18.22980499267578000
+            16.70777702331543000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333320617676000
-            18.62222099304199000
-            16.91110992431641000
+            24.48164749145508000
+            23.78700256347656000
+            22.94002723693848000
+            21.96203613281250000
+            20.86371231079101000
+            19.63693046569824000
+            18.26349830627441000
+            16.72375869750977000
             15.00000000000000000)
         end>
       ScreenObject.ModpathParticles.ParticleDistribution = pdGrid
@@ -2317,8 +2416,8 @@ object PhastModel: TPhastModel
         item
         end>
       ScreenObject.Comment = 
-        'Imported from C:\Users\harin\hydro-portfolio\modelmuse_recharge\' +
-        'recharge_model.bhd on 27-10-2026 12:45:02'
+        'Imported from C:\Users\harin\hydro-portfolio\modelmuse_well\well' +
+        '_model.bhd on 27-10-2026 13:02:22'
       ScreenObject.UsedModels = <>
       ScreenObject.PositionLocked = False
       ScreenObject.SutraBoundaries.FluidSource.Values = <>
@@ -2933,104 +3032,104 @@ object PhastModel: TPhastModel
           Values.Values = (
             100
             25.00000000000000000
-            24.68888854980469000
-            24.17777824401855000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333129882812000
-            18.62222099304199000
-            16.91110992431641000
+            24.40323448181152000
+            23.63523292541504000
+            22.72960281372070000
+            21.72335052490234000
+            20.63969993591308000
+            19.45711517333984000
+            18.14109802246094000
+            16.66242218017578000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333129882812000
-            18.62222290039062000
-            16.91111183166504000
+            24.37447166442871000
+            23.57286071777344000
+            22.63022422790527000
+            21.60075187683106000
+            20.53863334655762000
+            19.39054489135742000
+            18.10375785827637000
+            16.64616584777832000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666717529297000
-            22.55555534362793000
-            21.44444465637207000
-            20.13333320617676000
-            18.62222290039062000
-            16.91111183166504000
+            24.32179069519043000
+            23.45151710510254000
+            22.41768264770508000
+            21.31080245971680000
+            20.32353591918945000
+            19.26267814636230000
+            18.03722000122070000
+            16.61848640441894000
             15.00000000000000000
             25.00000000000000000
-            24.68889045715332000
-            24.17777824401855000
-            23.46666717529297000
-            22.55555725097656000
-            21.44444656372070000
-            20.13333511352539000
-            18.62222290039062000
-            16.91111183166504000
+            24.26117897033692000
+            23.29373168945313000
+            22.07818603515625000
+            20.70123672485352000
+            19.98202514648437000
+            19.09941673278809000
+            17.96395874023437000
+            16.59055519104004000
             15.00000000000000000
             25.00000000000000000
-            24.68889045715332000
-            24.17778015136719000
-            23.46666908264160000
-            22.55555725097656000
-            21.44444656372070000
-            20.13333511352539000
-            18.62222290039062000
-            16.91111183166504000
+            24.22919082641602000
+            23.18404769897461000
+            21.70009613037109000
+            19.23392868041992000
+            19.60391235351563000
+            18.98900222778320000
+            17.92864036560059000
+            16.57977676391602000
             15.00000000000000000
             25.00000000000000000
-            24.68889045715332000
-            24.17778015136719000
-            23.46666908264160000
-            22.55555725097656000
-            21.44444465637207000
-            20.13333511352539000
-            18.62222290039062000
-            16.91111183166504000
+            24.27153778076172000
+            23.31316757202148000
+            22.10422134399414000
+            20.73047256469727000
+            20.01069259643555000
+            19.12403678894043000
+            17.98182678222656000
+            16.59991073608398000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777824401855000
-            23.46666717529297000
-            22.55555725097656000
-            21.44444465637207000
-            20.13333320617676000
-            18.62222290039062000
-            16.91111183166504000
+            24.34379386901855000
+            23.49286460876465000
+            22.47314453125000000
+            21.37304878234863000
+            20.38435173034668000
+            19.31462669372559000
+            18.07471656799316000
+            16.63804435729980000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777824401855000
-            23.46666526794434000
-            22.55555534362793000
-            21.44444465637207000
-            20.13333320617676000
-            18.62222099304199000
-            16.91111183166504000
+            24.41077041625977000
+            23.64135360717773000
+            22.72244071960449000
+            21.70422363281250000
+            20.63903808593750000
+            19.47540283203125000
+            18.16436767578125000
+            16.67754745483398000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333320617676000
-            18.62222099304199000
-            16.91110992431641000
+            24.45793914794922000
+            23.73933410644531000
+            22.87104225158692000
+            21.88236999511719000
+            20.79217529296875000
+            19.58357810974121000
+            18.22980499267578000
+            16.70777702331543000
             15.00000000000000000
             25.00000000000000000
-            24.68888854980469000
-            24.17777633666992000
-            23.46666526794434000
-            22.55555343627930000
-            21.44444274902344000
-            20.13333320617676000
-            18.62222099304199000
-            16.91110992431641000
+            24.48164749145508000
+            23.78700256347656000
+            22.94002723693848000
+            21.96203613281250000
+            20.86371231079101000
+            19.63693046569824000
+            18.26349830627441000
+            16.72375869750977000
             15.00000000000000000)
         end>
       ScreenObject.ModpathParticles.ParticleDistribution = pdGrid
@@ -3045,8 +3144,8 @@ object PhastModel: TPhastModel
         item
         end>
       ScreenObject.Comment = 
-        'Imported from C:\Users\harin\hydro-portfolio\modelmuse_recharge\' +
-        'recharge_model.bhd on 27-10-2026 12:45:02'
+        'Imported from C:\Users\harin\hydro-portfolio\modelmuse_well\well' +
+        '_model.bhd on 27-10-2026 13:02:22'
       ScreenObject.UsedModels = <>
       ScreenObject.PositionLocked = False
       ScreenObject.SutraBoundaries.FluidSource.Values = <>
@@ -3117,130 +3216,6 @@ object PhastModel: TPhastModel
       SelectedVertices = <>
       MixtureFormulas.Strings = (
         '')
-    end
-    item
-      ClassTypeName = 'TScreenObject'
-      ElevationFormula = '(Model_Top + Upper_Aquifer_Bottom) / 2.'
-      Points = <
-        item
-          X = 473.11827956989250000
-          Y = -459.67741935483790000
-        end>
-      ScreenObject.Name = 'Well_1'
-      ScreenObject.CellSize = 1.00000000000000000
-      ScreenObject.CellSizeUsed = False
-      ScreenObject.ColorLine = False
-      ScreenObject.ElevationCount = ecOne
-      ScreenObject.ElevationFormula = '(Model_Top + Upper_Aquifer_Bottom) / 2.'
-      ScreenObject.EvaluatedAt = eaBlocks
-      ScreenObject.FillColor = clBlack
-      ScreenObject.FillScreenObject = False
-      ScreenObject.HigherElevationFormula = '0.'
-      ScreenObject.LineColor = clBlack
-      ScreenObject.LowerElevationFormula = '0.'
-      ScreenObject.Selected = True
-      ScreenObject.SetValuesByInterpolation = False
-      ScreenObject.SetValuesOfEnclosedCells = False
-      ScreenObject.SetValuesOfIntersectedCells = True
-      ScreenObject.ViewDirection = vdTop
-      ScreenObject.InterpValues = <>
-      ScreenObject.ModflowWellBoundary.Values = <
-        item
-          StartTime = -1.00000000000000000
-          PumpingRate = '-300'
-          Multiplier = '1'
-          GwtConcentrations = <>
-        end>
-      ScreenObject.ModflowWellBoundary.Parameters = <>
-      ScreenObject.ModflowWellBoundary.FormulaInterpretation = fiSpecific
-      ScreenObject.ModflowWellBoundary.Interp = mimStepwise
-      ScreenObject.ModflowWellBoundary.PestPumpingRateMethod = ppmMultiply
-      ScreenObject.ModflowWellBoundary.PestMultiplierMethod = ppmMultiply
-      ScreenObject.ModflowWellBoundary.PestConcentrationFormulas = <>
-      ScreenObject.ModflowWellBoundary.PestConcentrationMethods = <>
-      ScreenObject.SectionStarts.DataType = rdtInteger
-      ScreenObject.SectionStarts.Count = 0
-      ScreenObject.SectionStarts.Values = (
-        0)
-      ScreenObject.ModpathParticles.ParticleDistribution = pdGrid
-      ScreenObject.ModpathParticles.GridParticles.LeftFace = False
-      ScreenObject.ModpathParticles.GridParticles.RightFace = False
-      ScreenObject.ModpathParticles.GridParticles.BackFace = False
-      ScreenObject.ModpathParticles.GridParticles.FrontFace = False
-      ScreenObject.ModpathParticles.GridParticles.BottomFace = False
-      ScreenObject.ModpathParticles.GridParticles.TopFace = False
-      ScreenObject.ModpathParticles.Used = False
-      ScreenObject.ModpathParticles.ReleaseTimes = <
-        item
-        end>
-      ScreenObject.UsedModels = <>
-      ScreenObject.PositionLocked = False
-      ScreenObject.SutraBoundaries.FluidSource.Values = <>
-      ScreenObject.SutraBoundaries.FluidSource.UseBCTime = False
-      ScreenObject.SutraBoundaries.FluidSource.PestBoundaryValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.FluidSource.PestAssociatedValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.MassEnergySource.Values = <>
-      ScreenObject.SutraBoundaries.MassEnergySource.UseBCTime = False
-      ScreenObject.SutraBoundaries.MassEnergySource.PestBoundaryValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.MassEnergySource.PestAssociatedValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.SpecifiedPressure.Values = <>
-      ScreenObject.SutraBoundaries.SpecifiedPressure.UseBCTime = False
-      ScreenObject.SutraBoundaries.SpecifiedPressure.PestBoundaryValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.SpecifiedPressure.PestAssociatedValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.SpecifiedConcTemp.Values = <>
-      ScreenObject.SutraBoundaries.SpecifiedConcTemp.UseBCTime = False
-      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestBoundaryValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.SpecifiedConcTemp.PestAssociatedValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.Observations.Times = <>
-      ScreenObject.SutraBoundaries.Observations.ObservationFormat = ofOBS
-      ScreenObject.SutraBoundaries.Lake.InitialStage = '0'
-      ScreenObject.SutraBoundaries.Lake.InitialConcentrationOrTemperature = '0'
-      ScreenObject.SutraBoundaries.Lake.FractionRechargeDiverted = '0'
-      ScreenObject.SutraBoundaries.Lake.FractionDischargeDiverted = '0'
-      ScreenObject.SutraBoundaries.Lake.IsUsed = False
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.Values = <>
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.UseBCTime = False
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestBoundaryValueMethod = ppmAdd
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestAssociatedValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestLowerFlowRateMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherPressureMethod = ppmAdd
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestHigherFlowRateMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GeneralFlowBoundary.PestUOutMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GenTransportBoundary.Values = <>
-      ScreenObject.SutraBoundaries.GenTransportBoundary.UseBCTime = False
-      ScreenObject.SutraBoundaries.GenTransportBoundary.PestBoundaryValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GenTransportBoundary.PestAssociatedValueMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherUMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GenTransportBoundary.PestLowerFlowUMethod = ppmMultiply
-      ScreenObject.SutraBoundaries.GenTransportBoundary.PestHigherFlowUMethod = ppmMultiply
-      ScreenObject.ObjectLabel.Font.Charset = DEFAULT_CHARSET
-      ScreenObject.ObjectLabel.Font.Color = clBlack
-      ScreenObject.ObjectLabel.Font.Height = -12
-      ScreenObject.ObjectLabel.Font.Name = 'Segoe UI'
-      ScreenObject.ObjectLabel.Font.Style = []
-      ScreenObject.ObjectLabel.OffSetX = 0
-      ScreenObject.ObjectLabel.OffSetY = 20
-      ScreenObject.ObjectLabel.Visible = False
-      ScreenObject.ObjectVertexLabel.Font.Charset = DEFAULT_CHARSET
-      ScreenObject.ObjectVertexLabel.Font.Color = clBlack
-      ScreenObject.ObjectVertexLabel.Font.Height = -12
-      ScreenObject.ObjectVertexLabel.Font.Name = 'Segoe UI'
-      ScreenObject.ObjectVertexLabel.Font.Style = []
-      ScreenObject.ObjectVertexLabel.OffSetX = 0
-      ScreenObject.ObjectVertexLabel.OffSetY = 20
-      ScreenObject.ObjectVertexLabel.Visible = False
-      ScreenObject.SectionLabel.Font.Charset = DEFAULT_CHARSET
-      ScreenObject.SectionLabel.Font.Color = clBlack
-      ScreenObject.SectionLabel.Font.Height = -12
-      ScreenObject.SectionLabel.Font.Name = 'Segoe UI'
-      ScreenObject.SectionLabel.Font.Style = []
-      ScreenObject.SectionLabel.OffSetX = 0
-      ScreenObject.SectionLabel.OffSetY = 20
-      ScreenObject.SectionLabel.Visible = False
-      ScreenObject.StoredMinimumFraction.Value = 0.00000000000000000
-      ScreenObject.QuadtreeRefinementLevel = 0
-      ScreenObject.DynamicTimesSeriesCollections = <>
-      SelectedVertices = <>
     end>
   Version = '5.3.0.0'
   GuiSettings.FrontHeight = 133
@@ -3928,10 +3903,10 @@ object PhastModel: TPhastModel
       DataSet.CheckMax = False
       DataSet.CheckMin = False
       DataSet.Comment = 
-        'read from: "C:\Users\harin\hydro-portfolio\modelmuse_recharge\re' +
-        'charge_model.bhd" on 27-10-2026 12:45:02'#13#10'Stress Period: 1'#13#10'Time' +
-        ' Step: 1'#13#10'Elapsed Time: 1'#13#10'File last modified on: 27-10-2026 12:' +
-        '39:51'#13#10#13#10'Layer: 1'#13#10'Minimum value: 15'#13#10'Maximum value: 25'
+        'read from: "C:\Users\harin\hydro-portfolio\modelmuse_well\well_m' +
+        'odel.bhd" on 27-10-2026 13:02:22'#13#10'Stress Period: 1'#13#10'Time Step: 1' +
+        #13#10'Elapsed Time: 1'#13#10'File last modified on: 27-10-2026 12:56:05'#13#10#13 +
+        #10'Layer: 1'#13#10'Minimum value: 15'#13#10'Maximum value: 25'
       DataSet.DataType = rdtDouble
       DataSet.EvaluatedAt = eaBlocks
       DataSet.Limits.LowerLimit.BooleanLimitValue = False
@@ -3990,17 +3965,25 @@ object PhastModel: TPhastModel
       DataSet.UseValuesForObservations = False
       DataSet.StoredObservationDistance.Value = 0.00000000000000000
       DataSet.CompressedData = {
-        010000000A0000000A0000002F01000000000000789CFBFFFFFF7F4606068648
-        20F664C863286148652862280692C960760A83024312432590F400F21281FC78
-        8600064320190C267DC0A43F504D16548F21506D39432690950164A531E403CD
-        CB652865C801EAB6028A20ABF504CA14805540EC0A03AAC901AA4D05BA208841
-        8341098FAD4A0C9A40F1513054012391988948CC4C24662112B31289D988C4EC
-        44620E223127911816D6B03082F98D0DC9BE5175F455370A061BB0740091D11B
-        2C40F483265D309D505E6E0EA20F58F49981E58F179A8269252513B03ACFF946
-        20BAC1EEA58103C41C3D072CE61D20D23C062F88790B8834AF016ADE03A8790A
-        50F31488344F01CDBF30F3182C21E63940CD7320D13C866688790B686C9E0289
-        E6A1C72FBA7F490D3F5CE905577CC0D20BB1F18B2BBDA09B4769FAC36B1E0019
-        24B677}
+        010000000A0000000A0000003B02000000000000789CED924D48545114C78F93
+        5A2E5AE526517C480BFB721C4BCB11E2A20823150E130DB99A973A9A367DE038
+        C810C48302891645D9872E646A9208AA8D0699050F82226957CB8C97AE85DAB8
+        C8643AF33F0ECDE22177250673E17FEEBDEF9DFBBBFF73DECB6432992222EA62
+        75D0451AA6280D519C630FD6BD645037253906787796F7110A928FE329C41388
+        9D9C33B87EC6C7B92334C0AB73BCEAA34BCCBB40098AF1693F3FC9CFEDE03797
+        912177853927C6B9517610A25AAAD9E0D61ADACBCF0BE37F1D459AF2686A9BA6
+        8A3555A2A9524D6DD7D40E4D95692AD7EB5C8F72B595E6DD57C8DBDCBCC2D86A
+        A3597130FDFD47B3736AF2F191ECAC3EBE69CACED6C1D946BC7F9F3E8C7D49E2
+        5076A6EA3D0DD88F3DAB57C2A953F9BC850878F4F40E7866F81178CEFC3878CE
+        D20DF0ECDF3DE039B72AC033CE4FB9F21C3324FEEEC7C5DFF22078F6ED4EF0D4
+        971078CEB136F0D46899F04E4FBAF252DF5AC55FC371F0A8B81C3C757D1A1CEA
+        5B05C78CEF967A3FACF870AEEE812B4F3DF783675779C1B39AA7E1CB5E6C91F3
+        1313E2CBBB065FE6DC32782A36E6CAB3AEB50B6F7F50EA7D5921FE684EFAF6D6
+        23F5DAD5C2EF5A05CFBE3BEEDE3FCF19F0CC0357A55E23099E6145E47BF47683
+        67DE0C82973276C1A7134EBBD75B3B20FEBC4FC0737EBD068F0233E0D143F95F
+        682629FECAF78167C75FB8D7DB9290EFD1FE0EBCD49FEFC25BFA21BCCFF3E22F
+        7A0F3CEBAB5FFCD5BF72F777F28AF0929F8437F573DDDF8AFC2F950BD2BF9D69
+        A977B80D3C1598FDC7FB0B6623C32E}
     end
     item
       DataSetClass = 'TDataArray'
@@ -4010,10 +3993,10 @@ object PhastModel: TPhastModel
       DataSet.CheckMax = False
       DataSet.CheckMin = False
       DataSet.Comment = 
-        'read from: "C:\Users\harin\hydro-portfolio\modelmuse_recharge\re' +
-        'charge_model.bhd" on 27-10-2026 12:45:02'#13#10'Stress Period: 1'#13#10'Time' +
-        ' Step: 1'#13#10'Elapsed Time: 1'#13#10'File last modified on: 27-10-2026 12:' +
-        '39:51'#13#10#13#10'Minimum value: 15'#13#10'Maximum value: 25'
+        'read from: "C:\Users\harin\hydro-portfolio\modelmuse_well\well_m' +
+        'odel.bhd" on 27-10-2026 13:02:22'#13#10'Stress Period: 1'#13#10'Time Step: 1' +
+        #13#10'Elapsed Time: 1'#13#10'File last modified on: 27-10-2026 12:56:05'#13#10#13 +
+        #10'Minimum value: 15'#13#10'Maximum value: 25'
       DataSet.DataType = rdtDouble
       DataSet.EvaluatedAt = eaBlocks
       DataSet.Limits.LowerLimit.BooleanLimitValue = False
@@ -4070,15 +4053,24 @@ object PhastModel: TPhastModel
       DataSet.UseValuesForObservations = False
       DataSet.StoredObservationDistance.Value = 0.00000000000000000
       DataSet.CompressedData = {
-        010000000A0000000A0000000101000000000000789CFBFFFFFF7F4606060635
-        202E664865286150602863C8644804D229407E1A9055CA9003164F63C8672862
-        C805F31319AC80221E4015894075F10C010C864032184CFA00C9148651305401
-        2391988948CC4C24662112B31289D988C4EC44620E223127911816D6B03082F9
-        8D0DC9BE5175F455370A061BB0740091D11B2C40F483265D309D505E6E0EA20F
-        58F49981E58F179A8269252513B03ACFF94620BAC1EEA58103C41C3D072CE61D
-        20D23C062F88790B8834AF016ADE03A8790A50F31488344F01CDBF30F3182C21
-        E63940CD7320D13C866688790B686C9E0289E6A1C72FBA7F490D3F5CE905577C
-        C0D20BB1F18B2BBDA09B4769FAC36B1E007AA3A49A}
+        010000000A0000000A0000001002000000000000789CEDD24D481B411407F067
+        AAB61E3CE94569710FA514BFA2F64B2394A122046C6950147BCA46638A1FA5D0
+        984228940505911E2A56EBC741D2461141BDA8A055614150146F7A54D9D6B360
+        2F1EB4924EFEAF410F7B985351C8C29BC924B3BFFCDFECC662B1580A11DD9315
+        A416EA248DDE532BF9E4EC97EB80FC14A20E7C1FA0B7F48EDE60ED2397FCC62D
+        77F8E43E2F79A8548E75189FCBD14FC9EBBA5E298AE550AC1B8A95AA58698A95
+        AE583715EB9662652856E2AC136794E82DFDD2FF25F7FDDF7DC9EBAA5D15420E
+        BAEB75797C8E8C7D7F129FC5C68FC7F1D9285A7A84DFD7A20FB14E0B3D88CF94
+        77B70CEB81A912C14EB1B8ECED7BE1D1643F3CBDE11B3C6B6B049E75D80BCF3C
+        6D86677DCE85A7B54FD87A965ECBF9BE0639DF511B3CB3EF253CB1530BCF7A5A
+        054FF464B0573F66EB45F69E71BEB21A78949A0D4F74CFC1A1C0191C3D98C3FD
+        AE9F94E2BEE2215B4F4CBBE099779CF08C8A39E4327F55F2FDA3A39CCB798E5C
+        FAF2113CD13160EB195DD5EC1578B8DFD95CCE47CB7C6E2B0EEED7CC63FFD519
+        3CF3CB88FDF9391AE1E9851FB95F2D0C4F33BCFC3CFC4DF0F44F1E78112D0B39
+        AD86A87DBFF75B399F731C9EF57B111EB9E7E1D130BF2F341FE67CD9F9F0CCE0
+        8C7DBF95217E1ED5ABF0227F0ED83BFCC9DEF616E76B198467ECBA385FC9827D
+        BE171FD80B6FB23771FC2FDF09BF2FB7F7F9FC32A3DC6F67153CE15EBAF0FE02
+        C7A2B151}
     end
     item
       DataSetClass = 'TDataArray'
@@ -4088,10 +4080,10 @@ object PhastModel: TPhastModel
       DataSet.CheckMax = False
       DataSet.CheckMin = False
       DataSet.Comment = 
-        'read from: "C:\Users\harin\hydro-portfolio\modelmuse_recharge\re' +
-        'charge_model.bhd" on 27-10-2026 12:45:02'#13#10'Stress Period: 1'#13#10'Time' +
-        ' Step: 1'#13#10'Elapsed Time: 1'#13#10'File last modified on: 27-10-2026 12:' +
-        '39:51'#13#10#13#10'Minimum value: 15'#13#10'Maximum value: 25'
+        'read from: "C:\Users\harin\hydro-portfolio\modelmuse_well\well_m' +
+        'odel.bhd" on 27-10-2026 13:02:22'#13#10'Stress Period: 1'#13#10'Time Step: 1' +
+        #13#10'Elapsed Time: 1'#13#10'File last modified on: 27-10-2026 12:56:05'#13#10#13 +
+        #10'Minimum value: 15'#13#10'Maximum value: 25'
       DataSet.DataType = rdtDouble
       DataSet.EvaluatedAt = eaBlocks
       DataSet.Limits.LowerLimit.BooleanLimitValue = False
